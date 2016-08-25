@@ -1,0 +1,181 @@
+@import 'bourbon';
+@import 'colors';
+
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: local('Bebas Neue Book'), local('BebasNeueBook'), url('BebasNeueBook.woff2') format('woff2'), url('BebasNeueBook.woff') format('woff'), url('BebasNeueBook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff'), url('BebasNeueRegular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+//$bgDefault      : #e74c3c;
+//$bgHighlight    : #8578a3;
+//$colDefault     : #ecf0f1;
+//$colHighlight       : #ffbbbc;
+//
+//@media (max-width: $screen-sm-max) {
+//  .header .navbar-nav .open .dropdown-menu {
+//    > li > a {
+//      color: $colDefault;
+//      &:hover, &:focus {
+//        color: $colHighlight; }}
+//    > .active {
+//      > a, > a:hover, > a:focus, {
+//        color: $colHighlight;
+//        background-color: $bgHighlight; }}}
+//}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.container-fluid {
+  margin: 0 auto;
+  padding: 0;
+  .header {
+    position: relative;
+    padding: 10px 0 0 0;
+    margin: 0;
+    a {
+      &.navbar-brand {
+        margin: 5px 0 0 0;
+        padding: 0;
+        height: 50px;
+        &.logo {
+          img {
+            height: 50px;
+            display: inline-block;
+            &.logo { width: 50px; }
+            &.logo-text { width: 195px; margin-left: 10px; }
+          }
+        }
+      }
+    }
+    .navbar-text { }
+    .navbar-nav {
+      li {
+        padding: 25px 15px;
+        &:last-child { padding-right: 0; }
+        a {
+          -webkit-transition: color 0.2s ease, width 0.4s ease;
+          -moz-transition: color 0.2s ease, width 0.4s ease;
+          -ms-transition: color 0.2s ease, width 0.4s ease;
+          -o-transition: color 0.2s ease, width 0.4s ease;
+          transition: color 0.2s ease, width 0.4s ease;
+
+          color: white;
+          padding: 0;
+          font-size: 18px;
+          font-family: 'BebasNeueBook'; // BebasNeueRegular
+          background: none;
+          &:hover,  &:focus {
+            color: $blue;
+          }
+          &.earth-globe {
+            
+          }
+          &.nav-link {
+            text-decoration: none;
+            display: inline-block;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+            width: 0%;
+            &:hover, &:focus {
+              width: 100%;
+              border-bottom: 3px solid $blue;
+            }
+          }
+        }
+        .earth-globe-container a[rel~=popover] {
+          margin-right: 40px;
+          &.active {
+            span {
+              background: image-url('icons/earth-globe-hover.svg')
+            }
+          }
+        }
+        .popover-content {
+          padding: 0;
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+              text-align: center;
+              padding: 5px 0 0 0;
+              margin: 0;
+              a {
+                padding: 5px 30px 0 30px;
+                &:hover, &:focus {
+                  color: white;
+                }
+                &.active { color: $blue }
+              }
+              &:hover, &:focus {
+                background-color: rgba(75,147,212,0.5);
+              }
+            }
+          }
+        }
+      }
+      > .open {
+        > a, > a:hover, > a:focus {
+
+        }
+      }
+    }
+    .navbar-toggle {
+      &:hover, &:focus {
+//        background-color: $purple;
+      }
+      .icon-bar {
+        background-color: white;
+      }
+    }
+//    .navbar-link {
+//      color: ;
+//      &:hover {
+//        color: $grey-light;
+//      }
+//    }
+  }
+
+  &.container-home {
+    background: image-url('home-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    .shadow {
+      background-color: rgba(0,0,0,0.5);
+      background-size: cover;
+      border: 1px solid blue;
+      height: 100%;
+    }
+    .home {
+      width: 90%;
+      height: 100%;
+      border: 1px solid red;
+      margin: 0 auto;
+      position: relative;
+      color: white;
+      .main-screen {
+        h1 {
+          font-family: 'BebasNeueBook';
+          font-size: 52px;
+          margin-bottom: 25px;
+        }
+        h2 {
+          font-weight: normal;
+//          font-size: 32px;
+        }
+      }
+    }
+  }
+}

@@ -20,4 +20,19 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  titles:
+    bring_your_ideas_into_life: BRING YOUR IDES INTO LIFE
+    some_text: Some text
+  language:
+    english: ENGLISH
+    spanish: ESPAÑOL
+    german:  DEUTSCH
+    russian: РУССКИЙ
+  img:
+    alt:
+      logo: 'Innovation Feel, LLC'
+  btn:
+    get_in_touch: GET IN TOUCH
+  a:
+    title:
+      logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'

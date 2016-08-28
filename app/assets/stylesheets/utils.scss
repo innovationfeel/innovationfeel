@@ -19,6 +19,7 @@ a.icon {
   width: 19px;
   height: 19px;
   border: none;
+  &:focus { outline: 0 }
 }
 span.glyphicon {
   width: 19px;
@@ -34,23 +35,23 @@ span.glyphicon {
   &.earth-globe {
     background: image-url('icons/earth-globe.svg');
     background-size: cover;
-    &:hover, &:focus { background: image-url('icons/earth-globe-hover.svg'); }
+    &:hover, &:focus { background: image-url('icons/earth-globe-hover.svg') }
   }
   &.fb {
     background: image-url('icons/fb.svg');
     background-size: cover;
-    &:hover, &:focus { background: image-url('icons/fb-hover.svg'); }
+    &:hover, &:focus { background: image-url('icons/fb-hover.svg') }
   }
   &.linkedin {
     background: image-url('icons/linkedin.svg');
     background-size: cover;
-    &:hover, &:focus { background: image-url('icons/linkedin-hover.svg'); }
+    &:hover, &:focus { background: image-url('icons/linkedin-hover.svg') }
   }
   &.twitter {
     height: 17px;
     background: image-url('icons/twitter.svg');
     background-size: cover;
-    &:hover, &:focus { background: image-url('icons/twitter-hover.svg'); }
+    &:hover, &:focus { background: image-url('icons/twitter-hover.svg') }
   }
 }
 

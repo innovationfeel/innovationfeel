@@ -2,18 +2,21 @@ ready = ->
   $('span.earth-globe-container a[rel~=popover]').popover({
     html: true,
     placement: 'bottom',
-    trigger: 'focus',
+    trigger: 'click',
     content: earthGlobeContent()
-  })
+  }).on('show.bs.popover', (e) ->
+    $(this).addClass('active')
+  ).on 'hide.bs.popover', (e) ->
+    $(this).removeClass('active')
 
-  $('span.earth-globe-container a[rel~=popover]').on 'show.bs.popover', ->
-    $(this).toggleClass('active')
-
-  $('span.earth-globe-container a[rel~=popover]').on 'hide.bs.popover', ->
-    $(this).toggleClass('active')
+  # hide popovers on outside click
+  $(document).on 'click', (e) ->
+    $('a[rel~=popover]').each ->
+      if $(this).has(e.target).length == 0 && $('.popover').has(e.target).length == 0
+        $(this).not(e.target).popover('hide')
+        $('.popover').remove()
 
 earthGlobeContent = ->
-  # return 'sssss'
   return $('span.earth-globe-container a[rel~=popover]').parent().find('.earth-globe-popover-content').html()
 
 # Because of the turbolinks

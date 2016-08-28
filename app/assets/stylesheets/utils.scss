@@ -73,19 +73,30 @@ div.popover[role=tooltip] {
 }
 
 // Buttons
-//.btn-purple {
-//  border: none;
-//  background: $purple;
-//  padding: 10px 35px;
-//  color: white;
-//  border-radius: 0;
-//  -webkit-border-radius: 0;
-//  &:hover, &:focus {
-//    color: white;
-//    background: $purple-light;
-//  }
-//}
+.btn-blue {
+  border: 2px solid transparent;
+  background: rgba(64,141,210,0.6);
+  padding: 10px 45px;
+  color: white;
 
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+  border-radius: 2%;
+  
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  &:hover, &:focus {
+    color: white;
+    border: 2px solid white;
+    background: rgba(64,141,210,1);
+  }
+}
 
 // Media queries
 

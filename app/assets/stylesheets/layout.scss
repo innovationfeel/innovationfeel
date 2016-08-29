@@ -111,12 +111,14 @@ html, body {
       -moz-box-shadow: 0 4px 4px -4px #000000;
       box-shadow: 0 4px 4px -4px #000000;
 
-      a {
-        &.logo {
-          img {
-            &.logo { width: 30px; height: 30px; }
-            &.logo-text { width: 195px; margin-left: 10px; }
-          }
+      div.popover[role=tooltip] {
+        background-color: rgba(0,0,0,0.8);
+        .arrow:after { border-bottom-color: rgba(0,0,0,0.5) }
+      }
+      a.logo {
+        img.logo {
+          width: 30px;
+          height: 30px;
         }
       }
     }

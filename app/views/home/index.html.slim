@@ -1,29 +1,35 @@
-.home
-  nav.navbar.header
-    .navbar-header
-      button.navbar-toggle.collapsed aria-expanded='false' data-target='#header-content' data-toggle='collapse' type='button'
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      = link_to root_path, class: 'logo navbar-brand', title: t('a.title.logo') do
-        = image_tag('logo-white.svg', class: 'logo img-responsive')
-        = image_tag('innovation-feel.png', class: 'logo-text img-responsive', alt: t('img.alt.logo'))
+.home-screen
+  nav.navbar.navbar-fixed-top#header
+    #header-content
+      .navbar-header
+        button.navbar-toggle.collapsed aria-expanded='false' data-target='#header-content' data-toggle='collapse' type='button'
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to root_path, class: 'logo navbar-brand', title: t('a.title.logo') do
+          = image_tag('logo-white.svg', class: 'logo img-responsive')
+          = image_tag('innovation-feel.png', class: 'logo-text img-responsive', alt: t('img.alt.logo'))
                 
 
-    #header-content.collapse.navbar-collapse
-      ul.nav.navbar-nav.navbar-right
-        li= link_to 'ABOUT US', '#', class: 'nav-link'
-        li= link_to 'WHAT WE DO', '#' , class: 'nav-link'
-        li= link_to 'CONTACT US', '#', class: 'nav-link'
-        li= earth_globe_link
-        li= link_to '#', class: 'icon' do
-          span.glyphicon.fb
-        li= link_to '#', class: 'icon' do
-          span.glyphicon.linkedin
-        li= link_to '#', class: 'icon' do
-          span.glyphicon.twitter
+      #header-menu.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li= link_to 'ABOUT US', '#', class: 'nav-link'
+          li= link_to 'WHAT WE DO', '#' , class: 'nav-link'
+          li= link_to 'CONTACT US', '#', class: 'nav-link'
+          li= earth_globe_link
+          li= link_to '#', class: 'icon' do
+            span.glyphicon.fb
+          li= link_to '#', class: 'icon' do
+            span.glyphicon.linkedin
+          li= link_to '#', class: 'icon' do
+            span.glyphicon.twitter
 
   .main-screen.row.text-center
     h1= t('titles.bring_your_ideas_into_life')
     h2= t('titles.some_text')
     = link_to t('btn.get_in_touch'), '#', class: 'btn btn-blue', role: 'button'
+
+.who-we-are-screen
+  .text-block.bounceInRight.wow data-wow-offset='100'
+    h1= t('titles.who_we_are_and_what_we_do').html_safe
+    p= t('txt.who_we_are')

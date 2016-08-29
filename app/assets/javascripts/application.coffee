@@ -16,6 +16,4 @@
 #= require_tree .
 #= require twitter/bootstrap/tooltip
 #= require twitter/bootstrap/popover
-#= require twitter/bootstrap/affix
-#= require animate-scroll.min
 #= require main

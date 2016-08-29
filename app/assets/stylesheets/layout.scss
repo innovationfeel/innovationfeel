@@ -21,7 +21,7 @@
 //$colHighlight       : #ffbbbc;
 //
 //@media (max-width: $screen-sm-max) {
-//  #header .navbar-nav .open .dropdown-menu {
+//  .header .navbar-nav .open .dropdown-menu {
 //    > li > a {
 //      color: $colDefault;
 //      &:hover, &:focus {
@@ -37,52 +37,13 @@ html, body {
   padding: 0;
   margin: 0;
 }
-.container-home {
-  background: image-url('home-bg.jpg') no-repeat center center;
-  background-size: cover;
-  height: 100%;  
+.container-fluid {
   margin: 0 auto;
   padding: 0;
-
-  .shadow {
-    background-color: rgba(0,0,0,0.5);
-    background-size: cover;
-    height: 100%;
-  }
-  .home-screen {
-    width: 90%;
-    height: 100%;
-    border: 1px solid red;
-    margin: 0 auto;
+  .header {
     position: relative;
-    color: white;
-    padding-top: 100px;
-    .main-screen {
-      h1 {
-        font-size: 52px;
-        margin-bottom: 25px;
-      }
-      h2 {
-        font-weight: normal;
-//          font-size: 32px;
-      }
-    }
-  }
-
-  #header {
     padding: 10px 0 0 0;
     margin: 0;
-    height: 65px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    #header-content {
-      width: 90%;
-      margin: 0 auto;
-      padding-right: 15px;
-    }
     a {
       &.navbar-brand {
         margin: 5px 0 0 0;
@@ -98,29 +59,6 @@ html, body {
         }
       }
     }
-    &.affix {
-      padding: 0;
-      background: $dark-grey;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-
-      -webkit-box-shadow: 0 4px 4px -4px #000000;
-      -moz-box-shadow: 0 4px 4px -4px #000000;
-      box-shadow: 0 4px 4px -4px #000000;
-
-      a {
-        &.logo {
-          img {
-            &.logo { width: 30px; height: 30px; }
-            &.logo-text { width: 195px; margin-left: 10px; }
-          }
-        }
-      }
-    }
-
     .navbar-text { }
     .navbar-nav {
       li {
@@ -210,23 +148,33 @@ html, body {
 //    }
   }
 
-  .who-we-are-screen {
-    background: image-url('who-we-are-bg.jpg') no-repeat left 80px;
-    background-size: 60%;
-    width: 100%;
+  &.container-home {
+    background: image-url('home-bg.jpg') no-repeat center center;
+    background-size: cover;
     height: 100%;
-    position: relative;
-    overflow: hidden;
-    .text-block {
-      padding: 10px 20px;
-      width: 50%;
-      height: 60%;
-      margin: 140px 5% 0 0;
-      float: right;
-      color: $dark-grey;
-      background: rgba(245,245,245,0.8);
-      p {
-        font-size: 18px;
+    .shadow {
+      background-color: rgba(0,0,0,0.5);
+      background-size: cover;
+      border: 1px solid blue;
+      height: 100%;
+    }
+    .home {
+      width: 90%;
+      height: 100%;
+      border: 1px solid red;
+      margin: 0 auto;
+      position: relative;
+      color: white;
+      .main-screen {
+        h1 {
+          font-family: 'BebasNeueBook';
+          font-size: 52px;
+          margin-bottom: 25px;
+        }
+        h2 {
+          font-weight: normal;
+//          font-size: 32px;
+        }
       }
     }
   }

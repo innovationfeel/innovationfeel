@@ -1,9 +1,4 @@
 ready = ->
-  # init the animation when scrolling the page
-  (new WOW).init()
-
-  $('#header').affix(offset: { top: 100 })
-
   $('span.earth-globe-container a[rel~=popover]').popover({
     html: true,
     placement: 'bottom',

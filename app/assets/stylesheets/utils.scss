@@ -58,14 +58,12 @@ span.glyphicon {
 // Popovers
 div.popover[role=tooltip] {
   background-color: rgba(0,0,0,0.4);
-//  border-color: rgba(0,0,0,0.0);
   border: none;
   -webkit-border-radius: 2%;
   -moz-border-radius: 2%;
   -ms-border-radius: 2%;
   -o-border-radius: 2%;
   border-radius: 2%;
-//  box-shadow: none;
   .arrow:after { border-bottom-color: rgba(0,0,0,0.2) }
   .popover-content {
     color: white;

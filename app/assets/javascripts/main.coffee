@@ -2,9 +2,12 @@ ready = ->
   $('span.earth-globe-container a[rel~=popover]').popover({
     html: true,
     placement: 'bottom',
-    trigger: 'click',
+    trigger: 'manual',
     content: earthGlobeContent()
-  }).on('show.bs.popover', (e) ->
+  }).on('click', (e) ->
+    $(this).popover('toggle')
+    e.preventDefault()
+  ).on('show.bs.popover', (e) ->
     $(this).addClass('active')
   ).on 'hide.bs.popover', (e) ->
     $(this).removeClass('active')

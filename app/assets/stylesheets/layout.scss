@@ -59,6 +59,31 @@ html, body {
         }
       }
     }
+    &.affix {
+      padding: 0;
+      background: $dark-grey;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+
+      -webkit-box-shadow: 0 4px 4px -4px #000000;
+      -moz-box-shadow: 0 4px 4px -4px #000000;
+      box-shadow: 0 4px 4px -4px #000000;
+
+      div.popover[role=tooltip] {
+        background-color: rgba(0,0,0,0.8);
+        .arrow:after { border-bottom-color: rgba(0,0,0,0.5) }
+      }
+      a.logo {
+        img.logo {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
     .navbar-text { }
     .navbar-nav {
       li {

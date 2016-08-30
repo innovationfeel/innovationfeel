@@ -19,6 +19,11 @@ ready = ->
         $(this).not(e.target).popover('hide')
         $('.popover').remove()
 
+  $('.who-we-are-screen .text-block a.more').on 'click', ->
+    $('.who-we-are-screen .text-block').toggleClass('more')
+    return false
+  
+
 earthGlobeContent = ->
   return $('span.earth-globe-container a[rel~=popover]').parent().find('.earth-globe-popover-content').html()
 

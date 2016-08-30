@@ -42,6 +42,31 @@ html, body {
   padding: 0;
   .header {
     position: relative;
+
+  .shadow {
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    height: 100%;
+  }
+  .home-screen {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    padding-top: 100px;
+    .main-screen {
+      h1 {
+        font-size: 52px;
+        margin-bottom: 25px;
+      }
+      h2 {
+        font-weight: normal;
+      }
+    }
+  }
+
+  #header {
     padding: 10px 0 0 0;
     margin: 0;
     a {
@@ -200,6 +225,33 @@ html, body {
           font-weight: normal;
 //          font-size: 32px;
         }
+    position: relative;
+    overflow: hidden;
+    .text-block {
+      padding: 10px 20px;
+      width: 50%;
+      height: 60%;
+      margin: 140px 5% 0 0;
+      float: right;
+      color: $dark-grey;
+      background: rgba(245,245,245,0.8);
+      
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      &.more {
+        width: 90%;
+        background: rgba(245,245,245,1);
+        -webkit-box-shadow: 13px 15px 11px -9px grey;
+        -moz-box-shadow: 13px 15px 11px -9px grey;
+        box-shadow: 13px 15px 11px -9px grey;
       }
     }
   }

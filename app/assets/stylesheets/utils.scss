@@ -73,7 +73,7 @@ div.popover[role=tooltip] {
 // Buttons
 .btn-blue {
   border: 2px solid transparent;
-  background: rgba(64,141,210,0.6);
+  background: rgba(64,141,210,1);
   padding: 10px 45px;
   color: white;
 
@@ -89,11 +89,18 @@ div.popover[role=tooltip] {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 
-  &:hover, &:focus {
+  &:hover {
     color: white;
     border: 2px solid white;
-    background: rgba(64,141,210,1);
+    background: rgba(72,160,240,1);
   }
+  &.opacity {
+    background: rgba(64,141,210,0.6);
+    &:hover {
+      background: rgba(72,160,240,1);
+    }
+  }
+  &:focus { color: white }
 }
 
 // Media queries

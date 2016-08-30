@@ -23,6 +23,8 @@ en:
   titles:
     bring_your_ideas_into_life: BRING YOUR IDES INTO LIFE
     some_text: Some text
+    who_we_are: WHO WE ARE
+    what_we_do: WHAT WE DO
     who_we_are_and_what_we_do: 'WHO WE ARE<br />AND WHAT WE DO' 
   txt:
     who_we_are: "We are the team that after long term of working on the different outsourcing\n
@@ -40,6 +42,7 @@ en:
       logo: 'Innovation Feel, LLC'
   btn:
     get_in_touch: GET IN TOUCH
+    more: MORE
   a:
     title:
       logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'

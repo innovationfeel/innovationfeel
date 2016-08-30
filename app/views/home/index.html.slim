@@ -26,9 +26,10 @@
   .main-screen.row.text-center
     h1= t('titles.bring_your_ideas_into_life')
     h2= t('titles.some_text')
-    = link_to t('btn.get_in_touch'), '#', class: 'btn btn-blue', role: 'button'
+    = link_to t('btn.get_in_touch'), '#', class: 'btn btn-blue opacity', role: 'button'
 
 .who-we-are-screen.fadeIn.wow data-wow-offset='100' data-wow-duration='2s'
   .text-block.bounceInRight.wow data-wow-offset='100'
     h1= t('titles.who_we_are_and_what_we_do').html_safe
     p= t('txt.who_we_are')
+    = link_to t('btn.more'), '#', class: 'btn btn-blue more', data: { turbolinks: false }

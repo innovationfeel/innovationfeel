@@ -8,6 +8,5 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': true
     = csrf_meta_tags
   body
-    .container-home.container-fluid
-      .shadow
-        = yield
+    .container-home
+      = yield

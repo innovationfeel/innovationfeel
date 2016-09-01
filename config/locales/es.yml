@@ -1,0 +1,48 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  titles:
+    bring_your_ideas_into_life: BRING YOUR IDES INTO LIFE
+    some_text: ESPAÑOL
+    who_we_are: WHO WE ARE
+    what_we_do: WHAT WE DO
+    who_we_are_and_what_we_do: 'WHO WE ARE<br />AND WHAT WE DO' 
+  txt:
+    who_we_are: "We are the team that after long term of working on the different outsourcing\n
+    companies we have established own Сompany Innovation Feel to provide best service for web\n
+    and mobile development. We are the team of Senior and Middle developers with big expirience\n
+    of working with foreign customers with good communication skills. We follow the SCRUM\n
+    methodology and Agile practice."
+  language:
+    english: ENGLISH
+    spanish: ESPAÑOL
+    german:  DEUTSCH
+    russian: РУССКИЙ
+  img:
+    alt:
+      logo: 'Innovation Feel, LLC'
+  btn:
+    get_in_touch: GET IN TOUCH
+    more: MORE
+  a:
+    title:
+      logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'

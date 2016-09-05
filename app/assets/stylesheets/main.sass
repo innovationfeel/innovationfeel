@@ -1,0 +1,283 @@
+@import 'bourbon'
+
+.main-screen
+  background: image-url('home-bg.jpg') no-repeat center center
+  background-size: cover
+  position: relative
+  height: 100%
+  color: #fff
+
+  &::before
+    @extend .before
+    background-color: #000
+    opacity: 0.5
+  a
+    color: #fff
+    @include transition(all, 0.2s, ease)
+    &:hover
+      color: $blue
+  .main-content
+    height: 50%
+    position: relative
+    .btn
+      margin-top: 50px
+    .row
+      div
+        position: absolute
+        bottom: 0
+        margin: 0 auto
+    
+  #header
+    padding-top: 20px
+    // @include transition(all, 0.2s, ease)
+    .nav-toggle
+      float: right
+      width: 30px
+      height: 30px
+      line-height: 30px
+      display: block
+
+      span
+        margin-top: 15px
+        position: relative
+        display: block
+        width: 100%
+        height: 3px
+        background-color: #fff
+        transition: all 0.3s
+        backface-visibility: hidden
+        border-radius: 2px
+        &:after, &:before
+          content: ''
+          position: absolute
+          left: 0
+          top: -9px
+          width: 100%
+          height: 3px
+          background-color: #fff
+          @include transition(all, 0.3s, ease)
+          backface-visibility: hidden
+          border-radius: 2px
+        &:after
+          top: 9px
+
+      &.on span
+        background-color: transparent
+        &:before
+          background-color: $blue
+          transform: rotate(45deg) translate(5px, 5px)
+        &:after
+          background-color: $blue
+          transform: rotate(-45deg) translate(7px, -8px)
+
+      
+    .lg-menu nav
+      text-align: right
+      ul
+        @extend .ul.inline
+      li
+        line-height: 50px
+        padding: 5px 0 0 30px
+      .earth-globe-container
+        margin-right: 20px
+      .popover-content
+        padding: 0
+        ul
+          @extend .ul
+          li
+            display: block
+            margin: 0
+            padding: 0
+            line-height: 20px
+            // text-align: center
+            // padding: 5px 0 0 0
+            // margin: 0
+            a
+              text-align: center
+              display: block
+              padding: 5px 30px 3px 30px
+              &:hover, &:focus
+                color: #fff
+
+              &.active
+                color: $blue
+
+            &:hover, &:focus
+              background-color: rgba(75,147,212,0.5)
+
+    .xs-lang-menu
+      background-color: $dark-grey
+      a
+        &.menu-link
+          text-align: center
+        &.active
+          color: $blue
+
+    .xs-main-menu
+      height: 100%
+      li
+        &:last-child
+          text-align: center
+          &:hover
+            background: none
+          a.icon
+            margin: 40px 30px 30px 30px
+            width: 25px
+            height: 25px
+            display: inline-block
+            span
+              width: 25px
+              height: 25px
+      .all-rights
+        text-align: center
+        white-space: nowrap
+        
+
+    a.logo
+      img
+        display: inline-block
+        height: 50px
+        &:first-child
+          margin-right: 15px
+
+    // #header-content
+    //   width: 90%
+    //   margin: 0 auto
+    //   padding-right: 15px
+    //   a
+    //     &.navbar-brand
+    //       margin: 5px 0 0 0
+    //       padding: 0
+    //       height: 50px
+    //       &.logo
+    //         img
+    //           height: 50px
+    //           display: inline-block
+    //           &.logo
+    //             width: 50px
+    //           &.logo-text
+    //             width: 195px
+    //             margin-left: 10px
+    //
+    // &.affix
+    //   padding: 0
+    //   background: $dark-grey
+    //   @include shadow(0, 4px, 4px, -4px, #000000)
+    //
+    //   div.popover[role=tooltip]
+    //     background-color: rgba(0,0,0,0.8)
+    //     .arrow:after
+    //       border-bottom-color: rgba(0,0,0,0.5)
+    //
+    //   a.logo
+    //     img.logo
+    //       width: 30px
+    //       height: 30px
+
+    // .navbar-text
+    // .navbar-nav
+    //   li
+    //     padding: 25px 15px
+    //     &:last-child
+    //       padding-right: 0
+    //     a
+    //       -webkit-transition: color 0.2s ease, width 0.4s ease
+    //       -moz-transition: color 0.2s ease, width 0.4s ease
+    //       -ms-transition: color 0.2s ease, width 0.4s ease
+    //       -o-transition: color 0.2s ease, width 0.4s ease
+    //       transition: color 0.2s ease, width 0.4s ease
+    //
+    //       color: white
+    //       padding: 0
+    //       background: none
+    //       &:hover, &:focus
+    //         color: $blue
+    //
+    //       &.nav-link
+    //         text-decoration: none
+    //         display: inline-block
+    //         border-bottom: 3px solid transparent
+    //         white-space: nowrap
+    //         width: 0%
+    //         &:hover, &:focus
+    //           width: 100%
+    //           border-bottom: 3px solid $blue
+    //
+    //     .earth-globe-container a[rel~=popover]
+    //       margin-right: 40px
+    //       &.active
+    //         span
+    //           background: image-url('icons/earth-globe-hover.svg')
+    //
+
+
+.who-we-are-screen
+  background: image-url('who-we-are-bg.jpg') no-repeat left 45%
+  background-size: 60%
+  width: 100%
+  height: 100%
+  position: relative
+  overflow: hidden
+  .container
+    height: 100%
+    .row
+      height: 100%
+      position: relative
+      @extend .valign-center
+      .text-block
+        padding: 10px 20px 20px 20px
+        color: $dark-grey
+        background: rgba(245,245,245,0.9)
+        @include transition(all, 0.3s, ease)
+        @include shadow(13px, 15px, 11px, -9px, $dark-grey)
+        p
+          margin-bottom: 20px          
+
+
+.what-we-do-screen
+  background: image-url('what-we-do-bg.jpg') no-repeat center center
+  background-size: cover
+  position: relative
+  height: 100%
+  color: $dark-grey
+  overflow: hidden
+  .container.title
+    height: 20%
+    .row
+      height: 100%    
+      @extend .valign-center
+  .container.data
+    height: 80%
+    .images
+      height: 40%
+      a
+        color: $dark-grey
+        position: relative
+        @include transition(all, 0.2s, ease)
+        display: inline-block
+        &:hover
+          color: $blue
+          span.glyphicon.web-dev
+            background: image-url('icons/web-dev-hover.svg')
+            background-size: cover
+          span.glyphicon.mob-dev
+            background: image-url('icons/mob-dev-hover.svg')
+            background-size: cover
+          span.glyphicon.usability
+            background: image-url('icons/usability-hover.svg')
+            background-size: cover
+    .info
+      height: 50%
+      .schema
+        img
+          margin: 0 auto
+          display: none
+          &.web-dev
+            width: 70%
+          &.mob-dev
+            width: 65%
+          &.usability
+            width: 95%
+          &.active
+            display: block
+

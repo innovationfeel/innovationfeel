@@ -1,5 +1,3 @@
-server 'innovationfeel.com', port: 5577, roles: [:web, :app, :db], primary: true
-
 set :repo_url,        'git@github.com:innovationfeel/innovationfeel.git'
 set :application,     'innovationfeel'
 set :user,            'global'
@@ -9,7 +7,8 @@ set :puma_workers,    0
 # Don't change these unless you know what you're doing
 set :pty,             true
 set :use_sudo,        false
-set :stage,           :production
+# set :stage,           :production
+# set :stage,           :staging
 set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
@@ -51,8 +50,18 @@ namespace :deploy do
   desc "Make sure local git is in sync with remote."
   task :check_revision do
     on roles(:app) do
-      unless `git rev-parse HEAD` == `git rev-parse origin/master`
-        puts "WARNING: HEAD is not the same as origin/master"
+      # FOR PRODUCTION
+      #
+      # unless `git rev-parse HEAD` == `git rev-parse origin/master`
+      #   puts "WARNING: HEAD is not the same as origin/master"
+      #   puts "Run `git push` to sync changes."
+      #   exit
+      # end
+
+      # FOR STAGING
+      #
+      unless `git rev-parse HEAD` == `git rev-parse origin/dev`
+        puts "WARNING: HEAD is not the same as origin/dev"
         puts "Run `git push` to sync changes."
         exit
       end

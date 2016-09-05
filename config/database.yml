@@ -19,6 +19,12 @@ test:
   username: root
   password:
 
+staging:
+  <<: *default
+  database: innovationfeel_staging
+  username: root
+  password: wdLKQ24sdfj
+
 production:
   <<: *default
   database: innovationfeel

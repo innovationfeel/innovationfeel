@@ -1,0 +1,68 @@
+// Media queries
+
+@media (min-width: $screen-lg-min)
+  span.glyphicon
+    &.web-mob-dev, &.ui-ux, &.cloud
+      width: 130px
+      height: 130px
+
+@media (max-width: $screen-md-max)
+@media (max-width: $screen-sm-max)
+  h1
+    font-size: em(48px)
+  h2
+    font-size: em(28px)
+  a
+    font-size: em(18px)
+  .btn-blue
+    font-size: em(20px)
+
+  span.glyphicon
+    &.web-mob-dev, &.ui-ux, &.cloud
+      width: 100px
+      height: 100px  
+
+  .main-screen
+    #header
+      .lg-menu nav
+        .earth-globe-container
+          margin-right: 10px
+        li
+          line-height: 40px
+          padding: 5px 0 0 20px
+      a.logo img
+        height: 40px
+        &:first-child
+          margin-right: 10px
+
+  .who-we-are-screen
+    background-size: cover
+    .container .row .text-block
+      background: rgba(245,245,245,1)
+
+@media (max-width: $screen-xs-max)
+  h1
+    font-size: em(36px)
+  h2
+    font-size: em(22px)
+  .btn-blue
+    font-size: em(18px)
+
+  .main-screen
+    #header
+      padding: 5px 0
+      background-color: $dark-grey
+      @include shadow(0, 3px, 3px, -3px, #000)
+      a.logo img
+        height: 30px
+      a.earth-globe-xs
+        float: right
+        width: 30px
+        height: 30px
+        line-height: 30px
+        display: block
+        padding: 4px
+        margin-right: 15px
+        span
+          width: 22px
+          height: 22px

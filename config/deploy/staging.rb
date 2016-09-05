@@ -3,9 +3,9 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-set :stage, :staging
+set :stage, 'staging'
 set :tmp_dir, '/home/global/tmp'
-set :rails_env, :staging
+set :rails_env, 'staging'
 server '104.236.6.151', port: 7373, roles: %w{app db web}
 
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value

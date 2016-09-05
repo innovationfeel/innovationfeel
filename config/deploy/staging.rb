@@ -3,9 +3,9 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-set :stage, 'staging'
-set :puma_env, 'staging'
-set :rails_env, 'staging'
+set :stage, :staging
+set :puma_env, :staging
+set :rails_env, :staging
 
 set :tmp_dir, '/home/global/tmp'
 

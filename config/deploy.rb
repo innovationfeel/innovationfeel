@@ -1,8 +1,8 @@
-server 'innovationfeel.com', port: 5577, roles: [:web, :app, :db], primary: true
+# server 'innovationfeel.com', port: 5577, user: global, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:innovationfeel/innovationfeel.git'
 set :application,     'innovationfeel'
-set :user,            'global'
+# set :user,            'global'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
@@ -51,8 +51,18 @@ namespace :deploy do
   desc "Make sure local git is in sync with remote."
   task :check_revision do
     on roles(:app) do
-      unless `git rev-parse HEAD` == `git rev-parse origin/master`
-        puts "WARNING: HEAD is not the same as origin/master"
+      # FOR PRODUCTION
+      #
+      # unless `git rev-parse HEAD` == `git rev-parse origin/master`
+      #   puts "WARNING: HEAD is not the same as origin/master"
+      #   puts "Run `git push` to sync changes."
+      #   exit
+      # end
+
+      # FOR STAGING
+      #
+      unless `git rev-parse HEAD` == `git rev-parse origin/dev`
+        puts "WARNING: HEAD is not the same as origin/dev"
         puts "Run `git push` to sync changes."
         exit
       end

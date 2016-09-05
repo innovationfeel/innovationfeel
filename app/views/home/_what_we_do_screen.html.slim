@@ -1,0 +1,32 @@
+.what-we-do-screen
+
+  .container.title
+    .row
+      .col-md-12.text-center
+        h1= t('title.areas_of_expertise')
+
+  .container.data
+    .row.images
+      .col-md-4.col-sm-4.text-center.bounceInLeft.wow data-wow-offset='100' data-wow-duration='1.3s'
+        = link_to '#', title: t('a.web_development') do
+          span.glyphicon.web-dev.active
+          p= t('a.web_development')
+          
+      .col-md-4.col-sm-4.text-center.bounceInUp.wow data-wow-offset='100' data-wow-duration='1.3s'
+        = link_to '#', title: t('a.mob_development') do
+          span.glyphicon.mob-dev
+          p= t('a.mob_development')
+
+      .col-md-4.col-sm-4.text-center.bounceInRight.wow data-wow-offset='100' data-wow-duration='1.3s'
+        = link_to '#', title: t('a.usability') do
+          span.glyphicon.usability
+          p= t('a.usability')
+
+    .row.info
+      .col-md-6.col-md-offset-1
+        h2= t('title.web_development')
+        p= t('txt.web_development')
+      .col-md-5.hidden-xs.schema
+        = image_tag 'schema-web-dev.svg', class: 'web-dev active', alt: ''
+        = image_tag 'schema-mob-dev.svg', class: 'mob-dev', alt: ''
+        = image_tag 'schema-usability.svg', class: 'usability', alt: ''

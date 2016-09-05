@@ -3,9 +3,12 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
+server 'innovationfeel.com', port: 5577, roles: [:web, :app, :db], primary: true
+
+set :user, 'global'
 set :stage, :production
 set :rails_env, :production
-server 'innovationfeel.com', port: 5577, roles: [:web, :app, :db]#, primary: true
+set :puma_env, :production
 
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value

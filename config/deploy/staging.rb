@@ -5,7 +5,6 @@
 
 server '104.236.6.151', port: 7373, roles: %w{app db web}
 
-set :user, 'global'
 set :stage, :staging
 set :puma_env, :staging
 set :rails_env, :staging

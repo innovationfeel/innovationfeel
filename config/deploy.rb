@@ -1,4 +1,5 @@
 set :repo_url,        'git@github.com:innovationfeel/innovationfeel.git'
+set :user,            'global'
 set :application,     'innovationfeel'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0

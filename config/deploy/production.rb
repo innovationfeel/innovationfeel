@@ -5,7 +5,6 @@
 
 server 'innovationfeel.com', port: 5577, roles: [:web, :app, :db], primary: true
 
-set :user, 'global'
 set :stage, :production
 set :rails_env, :production
 set :puma_env, :production

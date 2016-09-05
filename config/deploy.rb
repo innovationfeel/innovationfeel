@@ -1,8 +1,8 @@
-# server 'innovationfeel.com', port: 5577, user: global, roles: [:web, :app, :db], primary: true
+# server 'innovationfeel.com', port: 5577, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:innovationfeel/innovationfeel.git'
 set :application,     'innovationfeel'
-# set :user,            'global'
+set :user,            'global'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 

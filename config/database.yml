@@ -24,3 +24,9 @@ production:
   database: innovationfeel
   username: root
   password: r00tdatabasepassw0rd!
+
+staging:
+  <<: *default
+  database: innovationfeel
+  username: root
+  password: wdLKQ24sdfj

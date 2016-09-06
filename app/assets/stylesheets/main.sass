@@ -17,7 +17,7 @@
     &:hover
       color: $blue
   .main-content
-    height: 50%
+    height: 65%
     position: relative
     .btn
       margin-top: 50px
@@ -29,7 +29,11 @@
     
   #header
     padding-top: 20px
-    // @include transition(all, 0.2s, ease)
+    position: fixed
+    width: 100%
+    z-index: 2
+    @include transition(all, 0.3s, ease)
+
     .nav-toggle
       float: right
       width: 30px
@@ -106,7 +110,7 @@
               background-color: rgba(75,147,212,0.5)
 
     .xs-lang-menu
-      background-color: $dark-grey
+      background-color: $grey
       a
         &.menu-link
           text-align: center
@@ -139,6 +143,28 @@
         height: 50px
         &:first-child
           margin-right: 15px
+    
+    &.affix
+      background: $dark-grey
+      padding-top: 5px
+      width: 100%
+      @include shadow(0, 4px, 4px, -4px, #000000)
+
+      div.popover[role=tooltip]
+        background-color: rgba(0,0,0,0.8)
+        .arrow:after
+          border-bottom-color: rgba(0,0,0,0.5)
+      a.logo
+        img.img-logo
+          width: 30px
+          height: 30px
+
+      .container
+        .lg-menu nav
+          ul
+            margin: 0
+          li.menu-item
+            line-height: 40px
 
     // #header-content
     //   width: 90%
@@ -159,20 +185,7 @@
     //             width: 195px
     //             margin-left: 10px
     //
-    // &.affix
-    //   padding: 0
-    //   background: $dark-grey
-    //   @include shadow(0, 4px, 4px, -4px, #000000)
-    //
-    //   div.popover[role=tooltip]
-    //     background-color: rgba(0,0,0,0.8)
-    //     .arrow:after
-    //       border-bottom-color: rgba(0,0,0,0.5)
-    //
-    //   a.logo
-    //     img.logo
-    //       width: 30px
-    //       height: 30px
+
 
     // .navbar-text
     // .navbar-nav

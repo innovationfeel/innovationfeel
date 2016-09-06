@@ -2,8 +2,6 @@ ready = ->
   # init the animation when scrolling the page
   (new WOW).init()
 
-  # $('#header').affix(offset: { top: 100 })
-
   $('#header .earth-globe-xs').on 'click', ->
     $(this).find('span').toggleClass('active')
     hideMainMenu()
@@ -13,9 +11,12 @@ ready = ->
 
   $('#header .nav-toggle').on 'click', ->
     $(this).toggleClass('on')
-    toggleScreens()
-    hideLangMenu()
     toggleMenu('#header .xs-main-menu')
+    hideLangMenu()
+    setTimeout (->
+      toggleScreens()
+      return
+    ), 400
     return false
 
   $('span.earth-globe-container a[rel~=popover]').popover({

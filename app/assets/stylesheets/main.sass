@@ -1,6 +1,6 @@
 @import 'bourbon'
 
-.main-screen
+#main-screen
   background: image-url('home-bg.jpg') no-repeat center center
   background-size: cover
   position: relative
@@ -13,9 +13,24 @@
     opacity: 0.5
   a
     color: #fff
-    @include transition(all, 0.2s, ease)
-    &:hover
+    -webkit-transition: color 0.2s ease, width 0.4s ease
+    -moz-transition: color 0.2s ease, width 0.4s ease
+    -ms-transition: color 0.2s ease, width 0.4s ease
+    -o-transition: color 0.2s ease, width 0.4s ease
+    transition: color 0.2s ease, width 0.4s ease
+    &:hover, &:focus, &:active
       color: $blue
+    &.menu-link
+      padding: 0
+      text-decoration: none
+      display: block
+      border-bottom: 3px solid transparent
+      white-space: nowrap
+      width: 0%
+      &:hover, &:focus, &:active
+        width: 100%
+        border-bottom: 3px solid $blue
+
   .main-content
     height: 65%
     position: relative
@@ -112,7 +127,7 @@
     .xs-lang-menu
       background-color: $grey
       a
-        &.menu-link
+        &.xs-menu-link
           text-align: center
         &.active
           color: $blue
@@ -215,16 +230,9 @@
     //         &:hover, &:focus
     //           width: 100%
     //           border-bottom: 3px solid $blue
-    //
-    //     .earth-globe-container a[rel~=popover]
-    //       margin-right: 40px
-    //       &.active
-    //         span
-    //           background: image-url('icons/earth-globe-hover.svg')
-    //
 
 
-.who-we-are-screen
+#who-we-are-screen
   background: image-url('who-we-are-bg.jpg') no-repeat left 45%
   background-size: 60%
   width: 100%
@@ -247,7 +255,7 @@
           margin-bottom: 20px          
 
 
-.what-we-do-screen
+#what-we-do-screen
   background: image-url('what-we-do-bg.jpg') no-repeat center center
   background-size: cover
   position: relative

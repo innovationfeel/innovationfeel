@@ -1,4 +1,4 @@
-.main-screen
+#main-screen
   #header data-spy='affix' data-offset-top='1'
     .container
       .row
@@ -8,19 +8,19 @@
             = image_tag 'innovation-feel.png', class: 'img-responsive hidden-xs', alt: t('img.alt.logo')
 
         .col-md-8.col-sm-8.col-xs-6.lg-menu
-          = link_to '#', class: 'nav-toggle hidden-sm hidden-md hidden-lg', data: { turbolinks: false } do
+          = link_to '#', class: 'nav-toggle hidden-sm hidden-md hidden-lg' do
             span
-          = link_to '#', class: 'icon earth-globe-xs hidden-sm hidden-md hidden-lg', data: { turbolinks: false } do
+          = link_to '#', class: 'icon earth-globe-xs hidden-sm hidden-md hidden-lg' do
             span.glyphicon.earth-globe
 
           nav.hidden-xs
             ul
-              li= link_to t('a.about_us'), '#',   class: 'menu-item'
-              li= link_to t('a.what_we_do'), '#', class: 'menu-item'
-              li= link_to t('a.contact_us'), '#', class: 'menu-item'
+              li= link_to t('a.about_us'),   '#', class: 'menu-link scroll', target: 'who-we-are-screen'
+              li= link_to t('a.what_we_do'), '#', class: 'menu-link scroll', target: 'what-we-do-screen'
+              li= link_to t('a.contact_us'), '#', class: 'menu-link scroll', target: 'who-we-are-screen'
               li
                 span.earth-globe-container
-                  = link_to '#', class: 'icon', rel: 'popover', tabindex: '0', data: { toggle: 'popover', turbolinks: false } do
+                  = link_to '#', class: 'icon', rel: 'popover', tabindex: '0', data: { toggle: 'popover' } do
                     span.glyphicon.earth-globe
                   .earth-globe-popover-content.hide
                     ul
@@ -39,16 +39,16 @@
       .hidden-sm.hidden-md.hidden-lg
         .xs-lang-menu.xs-menu
           ul
-            li= link_to t('language.english'), '#', class: 'menu-link active'
-            li= link_to t('language.spanish'), '#', class: 'menu-link'
-            li= link_to t('language.german'),  '#', class: 'menu-link'
-            li= link_to t('language.russian'), '#', class: 'menu-link'
+            li= link_to t('language.english'), '#', class: 'xs-menu-link active'
+            li= link_to t('language.spanish'), '#', class: 'xs-menu-link'
+            li= link_to t('language.german'),  '#', class: 'xs-menu-link'
+            li= link_to t('language.russian'), '#', class: 'xs-menu-link'
         .xs-main-menu.xs-menu
           nav
             ul
-              li= link_to t('a.about_us'),   '#', class: 'menu-link'
-              li= link_to t('a.what_we_do'), '#', class: 'menu-link'
-              li= link_to t('a.contact_us'), '#', class: 'menu-link'
+              li= link_to t('a.about_us'),   '#', class: 'xs-menu-link scroll', target: 'who-we-are-screen'
+              li= link_to t('a.what_we_do'), '#', class: 'xs-menu-link scroll', target: 'what-we-do-screen'
+              li= link_to t('a.contact_us'), '#', class: 'xs-menu-link scroll', target: 'who-we-are-screen'
               li
                 = link_to '#', class: 'icon' do
                   span.glyphicon.linkedin

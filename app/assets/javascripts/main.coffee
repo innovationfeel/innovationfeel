@@ -2,10 +2,17 @@ ready = ->
   # init the animation when scrolling the page
   (new WOW).init()
 
+  $('.scroll').click ->
+    $('html, body').animate {
+      scrollTop: $('#' + $(this).attr('target')).offset().top - 40
+    }, 700
+    if $(this).hasClass('xs-menu-link')
+      hideMainMenu()
+    return false
+
   $('#header .earth-globe-xs').on 'click', ->
     $(this).find('span').toggleClass('active')
     hideMainMenu()
-    showScreens()
     toggleMenu('#header .xs-lang-menu')
     return false
 
@@ -13,10 +20,6 @@ ready = ->
     $(this).toggleClass('on')
     toggleMenu('#header .xs-main-menu')
     hideLangMenu()
-    setTimeout (->
-      toggleScreens()
-      return
-    ), 400
     return false
 
   $('span.earth-globe-container a[rel~=popover]').popover({
@@ -59,15 +62,6 @@ hideMainMenu = ->
 hideLangMenu = ->
   $('#header .earth-globe-xs span').removeClass('active')
   $('#header .xs-lang-menu').animate({'margin-right': '-100%'})
-
-toggleScreens = ->
-  $('.who-we-are-screen').toggle()
-  $('.what-we-do-screen').toggle()
-
-showScreens = ->
-  $('.who-we-are-screen').show()
-  $('.what-we-do-screen').show()
-
 
 # Because of the turbolinks
 $(document).ready(ready)

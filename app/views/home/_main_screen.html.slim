@@ -2,12 +2,12 @@
   #header data-spy='affix' data-offset-top='1'
     .container
       .row
-        .col-md-4.col-sm-4.col-xs-6
+        .col-md-4.col-sm-4.col-xs-7
           = link_to root_path, class: 'logo', title: t('a.title.logo') do
             = image_tag 'logo-white.svg', class: 'img-responsive img-logo'
-            = image_tag 'innovation-feel.png', class: 'img-responsive hidden-xs', alt: t('img.alt.logo')
+            = image_tag 'innovation-feel.png', class: 'img-responsive', alt: t('img.alt.logo')
 
-        .col-md-8.col-sm-8.col-xs-6.lg-menu
+        .col-md-8.col-sm-8.col-xs-5.lg-menu
           = link_to '#', class: 'nav-toggle hidden-sm hidden-md hidden-lg' do
             span
           = link_to '#', class: 'icon earth-globe-xs hidden-sm hidden-md hidden-lg' do

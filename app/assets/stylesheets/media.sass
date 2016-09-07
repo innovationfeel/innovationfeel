@@ -6,7 +6,10 @@
       width: 130px
       height: 130px
 
+
 @media (max-width: $screen-md-max)
+
+
 @media (max-width: $screen-sm-max)
   h1
     font-size: em(48px)
@@ -40,6 +43,25 @@
     .container .row .text-block
       background: rgba(245,245,245,1)
 
+  #what-we-do-screen
+    .container.title
+      height: 15%
+    .container.data
+      .images
+        span.glyphicon
+          width: 100px
+          height: 100px
+      .info
+        .schema
+          img
+            &.web-dev
+              width: 60%
+            &.mob-dev
+              width: 55%
+            &.usability
+              width: 85%
+
+
 @media (max-width: $screen-xs-max)
   h1
     font-size: em(36px)
@@ -66,3 +88,20 @@
         span
           width: 22px
           height: 22px
+
+  #who-we-are-screen
+    height: 150%
+
+  #what-we-do-screen
+    .container.data
+      .images
+        span.glyphicon
+          width: 80px
+          height: 80px
+        .text-block
+          display: none
+          text-align: left
+          background: rgba(245,245,245,0.9)
+          @include shadow(13px, 15px, 11px, -9px, $dark-grey)
+          padding-top: 10px
+          margin-bottom: 25px

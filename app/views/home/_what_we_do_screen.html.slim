@@ -7,26 +7,51 @@
 
   .container.data
     .row.images
-      .col-md-4.col-sm-4.text-center.bounceInLeft.wow data-wow-offset='100' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.web_development') do
-          span.glyphicon.web-dev.active
+      .col-md-4.col-sm-4.col-xs-12.text-center.bounceInLeft.wow data-wow-offset='100' data-wow-duration='1.3s'
+        = link_to '#', title: t('a.web_development'), target: 'web-dev' do
+          span.glyphicon.web-dev
           p= t('a.web_development')
-          
-      .col-md-4.col-sm-4.text-center.bounceInUp.wow data-wow-offset='100' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.mob_development') do
+        .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
+          p= t('txt.web_development')
+
+      .col-md-4.col-sm-4.col-xs-12.text-center.bounceInUp.wow data-wow-offset='100' data-wow-duration='1.3s'
+        = link_to '#', title: t('a.mob_development'), target: 'mob-dev' do
           span.glyphicon.mob-dev
           p= t('a.mob_development')
+        .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
+          p= t('txt.mob_development')
 
-      .col-md-4.col-sm-4.text-center.bounceInRight.wow data-wow-offset='100' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.usability') do
+      .col-md-4.col-sm-4.col-xs-12.text-center.bounceInRight.wow data-wow-offset='100' data-wow-duration='1.3s'
+        = link_to '#', title: t('a.usability'), target: 'usability' do
           span.glyphicon.usability
           p= t('a.usability')
+        .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
+          p= t('txt.usability')
 
-    .row.info
-      .col-md-6.col-md-offset-1
-        h2= t('title.web_development')
-        p= t('txt.web_development')
-      .col-md-5.hidden-xs.schema
-        = image_tag 'schema-web-dev.svg', class: 'web-dev active', alt: ''
-        = image_tag 'schema-mob-dev.svg', class: 'mob-dev', alt: ''
-        = image_tag 'schema-usability.svg', class: 'usability', alt: ''
+    .row.info.hidden-xs
+      #web-dev.text-block.animated.active
+        .container
+          .row
+            .col-md-6.col-md-offset-1
+              h2= t('title.web_development')
+              p= t('txt.web_development')
+            .col-md-5.schema
+              = image_tag 'schema-web-dev.svg', class: 'web-dev', alt: ''
+
+      #mob-dev.text-block.animated
+        .container
+          .row
+            .col-md-6.col-md-offset-1
+              h2= t('title.mob_development')
+              p= t('txt.mob_development')
+            .col-md-5.schema
+              = image_tag 'schema-mob-dev.svg', class: 'mob-dev', alt: ''
+
+      #usability.text-block.animated
+        .container
+          .row
+            .col-md-6.col-md-offset-1
+              h2= t('title.usability')
+              p= t('txt.usability')
+            .col-md-5.schema
+              = image_tag 'schema-usability.svg', class: 'usability', alt: ''        

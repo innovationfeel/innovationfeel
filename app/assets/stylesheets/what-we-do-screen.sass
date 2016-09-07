@@ -1,0 +1,59 @@
+@import 'bourbon'
+
+#what-we-do-screen
+  background: image-url('what-we-do-bg.jpg') no-repeat center center
+  background-size: cover
+  position: relative
+  // height: 110%
+  color: $dark-grey
+  overflow: hidden
+  .container.title
+    height: 20%
+    .row
+      height: 100%    
+      @extend .valign-center
+
+  .container.data
+    padding-bottom: 20px
+    height: 80%
+    .images
+      padding-bottom: 40px
+      a
+        color: $dark-grey
+        position: relative
+        @include transition(all, 0.2s, ease)
+        display: inline-block
+        &:hover, &.active
+          color: $blue
+          span.glyphicon.web-dev
+            background: image-url('icons/web-dev-hover.svg')
+            background-size: cover
+          span.glyphicon.mob-dev
+            background: image-url('icons/mob-dev-hover.svg')
+            background-size: cover
+          span.glyphicon.usability
+            background: image-url('icons/usability-hover.svg')
+            background-size: cover
+        &:active, &:focus
+          text-decoration: none
+          
+    .info
+      height: 50%
+      #web-dev, #mob-dev, #usability
+        display: none
+        .row
+          @extend .valign-center
+        &.active
+          display: block
+      .schema
+        height: 100%
+        text-align: center
+        img
+          margin: 0 auto
+          opacity: 0.7
+          &.web-dev
+            width: 70%
+          &.mob-dev
+            width: 65%
+          &.usability
+            width: 95%

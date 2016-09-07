@@ -11,25 +11,6 @@
     @extend .before
     background-color: #000
     opacity: 0.5
-  a
-    color: #fff
-    -webkit-transition: color 0.2s ease, width 0.4s ease
-    -moz-transition: color 0.2s ease, width 0.4s ease
-    -ms-transition: color 0.2s ease, width 0.4s ease
-    -o-transition: color 0.2s ease, width 0.4s ease
-    transition: color 0.2s ease, width 0.4s ease
-    &:hover, &:focus, &:active
-      color: $blue
-    &.menu-link
-      padding: 0
-      text-decoration: none
-      display: block
-      border-bottom: 3px solid transparent
-      white-space: nowrap
-      width: 0%
-      &:hover, &:focus, &:active
-        width: 100%
-        border-bottom: 3px solid $blue
 
   .main-content
     height: 65%
@@ -48,6 +29,26 @@
     width: 100%
     z-index: 2
     @include transition(all, 0.3s, ease)
+
+    a
+      color: #fff
+      -webkit-transition: color 0.2s ease, width 0.4s ease
+      -moz-transition: color 0.2s ease, width 0.4s ease
+      -ms-transition: color 0.2s ease, width 0.4s ease
+      -o-transition: color 0.2s ease, width 0.4s ease
+      transition: color 0.2s ease, width 0.4s ease
+      &:hover, &:focus, &:active
+        color: $blue
+      &.menu-link
+        padding: 0
+        text-decoration: none
+        display: block
+        border-bottom: 3px solid transparent
+        white-space: nowrap
+        width: 0%
+        &:hover, &:focus, &:active
+          width: 100%
+          border-bottom: 3px solid $blue
 
     .nav-toggle
       float: right
@@ -230,75 +231,3 @@
     //         &:hover, &:focus
     //           width: 100%
     //           border-bottom: 3px solid $blue
-
-
-#who-we-are-screen
-  background: image-url('who-we-are-bg.jpg') no-repeat left 45%
-  background-size: 60%
-  width: 100%
-  height: 100%
-  position: relative
-  overflow: hidden
-  .container
-    height: 100%
-    .row
-      height: 100%
-      position: relative
-      @extend .valign-center
-      .text-block
-        padding: 10px 20px 20px 20px
-        color: $dark-grey
-        background: rgba(245,245,245,0.9)
-        @include transition(all, 0.3s, ease)
-        @include shadow(13px, 15px, 11px, -9px, $dark-grey)
-        p
-          margin-bottom: 20px          
-
-
-#what-we-do-screen
-  background: image-url('what-we-do-bg.jpg') no-repeat center center
-  background-size: cover
-  position: relative
-  height: 100%
-  color: $dark-grey
-  overflow: hidden
-  .container.title
-    height: 20%
-    .row
-      height: 100%    
-      @extend .valign-center
-  .container.data
-    height: 80%
-    .images
-      height: 40%
-      a
-        color: $dark-grey
-        position: relative
-        @include transition(all, 0.2s, ease)
-        display: inline-block
-        &:hover
-          color: $blue
-          span.glyphicon.web-dev
-            background: image-url('icons/web-dev-hover.svg')
-            background-size: cover
-          span.glyphicon.mob-dev
-            background: image-url('icons/mob-dev-hover.svg')
-            background-size: cover
-          span.glyphicon.usability
-            background: image-url('icons/usability-hover.svg')
-            background-size: cover
-    .info
-      height: 50%
-      .schema
-        img
-          margin: 0 auto
-          display: none
-          &.web-dev
-            width: 70%
-          &.mob-dev
-            width: 65%
-          &.usability
-            width: 95%
-          &.active
-            display: block
-

@@ -23,7 +23,7 @@
         position: relative
         @include transition(all, 0.2s, ease)
         display: inline-block
-        &:hover, &.active
+        &.active
           color: $blue
           span.glyphicon.web-dev
             background: image-url('icons/web-dev-hover.svg')
@@ -45,6 +45,7 @@
           @extend .valign-center
         &.active
           display: block
+
       .schema
         height: 100%
         text-align: center

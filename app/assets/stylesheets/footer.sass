@@ -1,0 +1,35 @@
+@import 'bourbon'
+
+#footer
+  background-color: $dark-grey
+  width: 100%
+
+  .footer-menu
+    text-align: right
+
+  .all-rights
+    display: inline-block
+    color: #fff
+    line-height: 50px
+    padding-top: 5px
+
+  nav
+    ul
+      @extend .ul.inline
+      margin: 0
+    li
+      line-height: 50px
+      padding: 5px 0 0 20px
+      &.social-networks
+        a
+          margin-left: 20px
+          &:first-child
+            margin-left: 0
+
+  a
+    font-family: 'BebasNeueBook', sans-serif
+    font-size: em(17px)
+    color: #fff
+    &:hover, &:focus, &:active
+      color: $blue
+      text-decoration: none

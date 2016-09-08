@@ -1,0 +1,62 @@
+@import 'bourbon'
+
+#contact-us-screen
+  background: image-url('contact-us-bg.jpg') no-repeat center center
+  background-size: cover
+  position: relative
+  min-height: 100%
+  color: #fff
+
+  .container.title
+    height: 20%
+    .row
+      height: 100%
+      @extend .valign-center
+
+  .contact-form
+    background: rgba(15,134,241,0.4)
+    input[type=text], input[type=email], select, textarea
+      margin: 15px 0
+      height: 35px
+      font-size: em(18px)
+      width: 100%
+      background: none
+      border: none
+      outline: 0
+      border-bottom: 1px solid #fff
+    input[type=submit]
+      margin-bottom: 30px
+    textarea
+      margin: 25px 0
+      padding: 5px
+      height: 140px
+      border: 1px solid #fff
+    select
+      -webkit-appearance: none
+      -moz-appearance: none
+      text-indent: 0
+      text-overflow: ''
+      option
+        background: $dark-grey
+        padding: 5px 0 2px 0
+      option[value=""]
+        background: $grey
+        color: $blue
+    span.select-arrow
+      margin: -40px 0 0 0
+      float: right
+
+  .follow-us
+    background: rgba(15,134,241,0.4)
+    .row
+      margin: 20px 0
+    a
+      white-space: nowrap
+      margin: 0 0 20px 0
+      display: block
+      color: #fff
+      &:hover
+        text-decoration: underline
+
+    span.glyphicon
+      margin-right: 15px

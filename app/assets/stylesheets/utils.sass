@@ -79,7 +79,7 @@ a.icon
   height: 19px
   border: none
   &:focus
-    outline: 0 
+    outline: 0
 
 span.glyphicon
   width: 19px
@@ -118,6 +118,13 @@ span.glyphicon
       background: image-url('icons/twitter-hover.svg')
       background-size: cover
 
+  &.google-plus
+    background: image-url('icons/google-plus.svg')
+    background-size: cover
+    &:hover, &:focus
+      background: image-url('icons/google-plus-hover.svg')
+      background-size: cover
+
   &.web-dev
     width: 120px
     height: 120px
@@ -150,7 +157,7 @@ div.popover[role=tooltip]
 // Buttons
 .btn-blue
   font-family: 'BebasNeueRegular', sans-serif
-  border: 2px solid transparent
+  border: 2px solid #fff
   background: rgba(64,141,210,1)
   padding: 7px 50px 4px 50px
   color: #fff

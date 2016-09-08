@@ -4,10 +4,14 @@ en:
     some_text: Some text
     who_we_are: WHO WE ARE
     what_we_do: WHAT WE DO
+    contact_us: CONTACT US
+    get_in_touch: GET IN TOUCH
+    follow_us: FOLLOW US
     areas_of_expertise: AREAS OF EXPERTISE
     web_development: Web Application Development
     mob_development: Mobile Application Development
     usability: Usability
+    send_a_message: Send a message
 
   txt:
     who_we_are: "We are the team that after long term of working on the different outsourcing\n
@@ -74,6 +78,16 @@ en:
     alt:
       logo: 'Innovation Feel, LLC'
 
+  form:
+    send: Send
+    first_name: First Name
+    last_name: Last Name (optional)
+    email: Email
+    company: Company (optional)
+    phone: Phone (optional)
+    comment: Your inquiry or comments
+    select_country: Select a Country
+
   a:
     about_us: ABOUT US
     what_we_do: WHAT WE DO
@@ -82,6 +96,10 @@ en:
     web_development: Web Application Development
     mob_development: Mobile Application Development
     usability: Usability
+    linkedin: LinkedIn
+    fb: Facebook
+    twitter: Twitter
+    google_plus: Google+
 
     title:
       logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'

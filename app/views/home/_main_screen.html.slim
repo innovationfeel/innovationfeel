@@ -63,5 +63,12 @@
     .row
       .col-md-12.col-xs-12.text-center
         h1= t('title.bring_your_ideas_into_life')
-        h2= t('title.some_text')
+        ul
+          li
+            h2= t('title.web_apps')
+          li
+            h2= t('title.mobile_apps')
+          li
+            h2= t('title.product_design')
+        
         = link_to t('a.get_in_touch'), '#', class: 'btn btn-blue opacity scroll', role: 'button', target: 'contact-us-screen'

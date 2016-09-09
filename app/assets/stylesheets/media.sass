@@ -1,6 +1,11 @@
 // Media queries
 
 @media (min-width: $screen-lg-min)
+  h1
+    font-size: em(72px)
+  h2
+    font-size: em(32px)
+
   span.glyphicon
     &.web-mob-dev, &.ui-ux, &.cloud
       width: 130px
@@ -8,14 +13,21 @@
 
 
 @media (max-width: $screen-md-max)
+  h1
+    font-size: em(68px)
+  h2
+    font-size: em(32px)
+
   #contact-us-screen
     .follow-us
       a
-        font-size: em(16px)
+        font-size: em(15px)
 
 @media (max-width: $screen-sm-max)
+  html, body
+    font-size: em(16px)
   h1
-    font-size: em(48px)
+    font-size: em(62px)
   h2
     font-size: em(28px)
   a
@@ -82,14 +94,20 @@
 
 
 @media (max-width: $screen-xs-max)
+  html, body
+    font-size: em(16px)
   h1
-    font-size: em(36px)
+    font-size: em(34px)
   h2
-    font-size: em(22px)
+    font-size: em(18px)
   .btn-blue
     font-size: em(18px)
 
   #main-screen
+    .main-content
+      li
+        margin: 0 10px
+
     #header
       background: $dark-grey
       padding: 5px 0

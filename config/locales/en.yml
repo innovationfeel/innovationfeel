@@ -1,20 +1,34 @@
 en:
   title:
     bring_your_ideas_into_life: BRING YOUR IDES INTO LIFE
-    some_text: Some text
     who_we_are: WHO WE ARE
     what_we_do: WHAT WE DO
     contact_us: CONTACT US
     get_in_touch: GET IN TOUCH
     follow_us: FOLLOW US
     areas_of_expertise: AREAS OF EXPERTISE
-    web_development: Web Application Development
-    mob_development: Mobile Application Development
+    web_applications: Web Applications
+    mobile_applications: Mobile Applications
     usability: Usability
+    product_design: Product Design
+    web_apps: Web apps
+    mobile_apps: Mobile apps
     send_a_message: Send a message
 
   txt:
-    who_we_are: "We are the team that after long term of working on the different outsourcing\n
+    who_we_are: "<p>Innovation Feel is a team of passionate engineers and designers.\n
+    We design and build friendly digital products in Web and Mobile areas.</p>\n
+    <p>We understand that technologies can be complicated for non technical people.\n
+    That is why our development process is designed to keep it simple and clear in understanding for you.</p>\n
+    <p>Our team helps to innovate your business and move it to the next level.\n
+    Adapt and compete it in a constantly changing technology landscape.</p>\n
+    <p>We build long term relations and want you to feel happy during our partnership.</p>"
+
+    web_applications: "We are the team that after long term of working on the different outsourcing\n
+    companies we have established own Сompany Innovation Feel to provide best service for web\n
+    and mobile development. We are the team of Senior and Middle developers with big expirience\n
+    of working with foreign customers with good communication skills. We follow the SCRUM\n
+    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
     companies we have established own Сompany Innovation Feel to provide best service for web\n
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
@@ -23,20 +37,7 @@ en:
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
     methodology and Agile practice."
-    web_development: "We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice."
-    mob_development: "We are the team that after long term of working on the different outsourcing\n
+    mobile_applications: "We are the team that after long term of working on the different outsourcing\n
     companies we have established own Сompany Innovation Feel to provide best service for web\n
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
@@ -81,7 +82,7 @@ en:
     email: Email
     company: Company (optional)
     phone: Phone (optional)
-    comment: Your inquiry or comments
+    comment: Few words about your project
     select_country: Select a Country
 
   a:
@@ -89,8 +90,9 @@ en:
     what_we_do: WHAT WE DO
     contact_us: CONTACT US
     get_in_touch: GET IN TOUCH
-    web_development: Web Application Development
-    mob_development: Mobile Application Development
+    lets_get_started: LET'S GET STARTED
+    web_applications: Web Applications
+    mobile_applications: Mobile Applications
     usability: Usability
     linkedin: LinkedIn
     fb: Facebook

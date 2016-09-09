@@ -7,10 +7,10 @@ en:
     get_in_touch: GET IN TOUCH
     follow_us: FOLLOW US
     areas_of_expertise: AREAS OF EXPERTISE
-    web_applications: Web Applications
-    mobile_applications: Mobile Applications
-    usability: Usability
+    web_development: Web Application Development
+    mobile_development: Mobile Application Development
     product_design: Product Design
+    product_design_ux: Product Design and UX
     web_apps: Web apps
     mobile_apps: Mobile apps
     send_a_message: Send a message
@@ -24,7 +24,7 @@ en:
     Adapt and compete it in a constantly changing technology landscape.</p>\n
     <p>We build long term relations and want you to feel happy during our partnership.</p>"
 
-    web_applications: "We are the team that after long term of working on the different outsourcing\n
+    web_development: "We are the team that after long term of working on the different outsourcing\n
     companies we have established own Сompany Innovation Feel to provide best service for web\n
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
@@ -37,7 +37,7 @@ en:
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
     methodology and Agile practice."
-    mobile_applications: "We are the team that after long term of working on the different outsourcing\n
+    mobile_development: "We are the team that after long term of working on the different outsourcing\n
     companies we have established own Сompany Innovation Feel to provide best service for web\n
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
@@ -50,7 +50,7 @@ en:
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
     methodology and Agile practice."
-    usability: "We are the team that after long term of working on the different outsourcing\n
+    product_design_ux: "We are the team that after long term of working on the different outsourcing\n
     companies we have established own Сompany Innovation Feel to provide best service for web\n
     and mobile development. We are the team of Senior and Middle developers with big expirience\n
     of working with foreign customers with good communication skills. We follow the SCRUM\n
@@ -91,9 +91,9 @@ en:
     contact_us: CONTACT US
     get_in_touch: GET IN TOUCH
     lets_get_started: LET'S GET STARTED
-    web_applications: Web Applications
-    mobile_applications: Mobile Applications
-    usability: Usability
+    web_apps: Web Apps
+    mobile_apps: Mobile Apps
+    product_design: Product Design
     linkedin: LinkedIn
     fb: Facebook
     twitter: Twitter

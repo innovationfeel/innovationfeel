@@ -8,33 +8,33 @@
   .container.data
     .row.images
       .col-md-4.col-sm-4.col-xs-12.text-center.bounceInLeft.wow data-wow-offset='100' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.web_applications'), target: 'web-dev' do
+        = link_to '#', title: t('a.web_apps'), target: 'web-dev' do
           span.glyphicon.web-dev
-          p= t('a.web_applications')
+          p= t('a.web_apps')
         .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
-          p= t('txt.web_applications')
+          p= t('txt.web_development')
 
       .col-md-4.col-sm-4.col-xs-12.text-center.bounceInUp.wow data-wow-offset='100' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.mobile_applications'), target: 'mob-dev' do
+        = link_to '#', title: t('a.mobile_apps'), target: 'mob-dev' do
           span.glyphicon.mob-dev
-          p= t('a.mobile_applications')
+          p= t('a.mobile_apps')
         .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
-          p= t('txt.mobile_applications')
+          p= t('txt.mobile_development')
 
       .col-md-4.col-sm-4.col-xs-12.text-center.bounceInRight.wow data-wow-offset='100' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.usability'), target: 'usability' do
+        = link_to '#', title: t('a.product_design'), target: 'usability' do
           span.glyphicon.usability
-          p= t('a.usability')
+          p= t('a.product_design')
         .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
-          p= t('txt.usability')
+          p= t('txt.product_design_ux')
 
     .row.info.hidden-xs
       #web-dev.text-block.animated.active
         .container
           .row
             .col-md-6.col-md-offset-1
-              h2= t('title.web_applications')
-              p= t('txt.web_applications')
+              h2= t('title.web_development')
+              p= t('txt.web_development')
             .col-md-5.schema
               = image_tag 'schema-web-dev.svg', class: 'web-dev', alt: ''
 
@@ -42,8 +42,8 @@
         .container
           .row
             .col-md-6.col-md-offset-1
-              h2= t('title.mobile_applications')
-              p= t('txt.mobile_applications')
+              h2= t('title.mobile_development')
+              p= t('txt.mobile_development')
             .col-md-5.schema
               = image_tag 'schema-mob-dev.svg', class: 'mob-dev', alt: ''
 
@@ -51,7 +51,7 @@
         .container
           .row
             .col-md-6.col-md-offset-1
-              h2= t('title.usability')
-              p= t('txt.usability')
+              h2= t('title.product_design_ux')
+              p= t('txt.product_design_ux')
             .col-md-5.schema
               = image_tag 'schema-usability.svg', class: 'usability', alt: ''        

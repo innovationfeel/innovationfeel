@@ -9,7 +9,7 @@
 
       .col-md-7.col-xs-12.contact-form
         h2.text-center= t('title.send_a_message')
-        = form_tag('#', method: :post) do
+        = form_tag(contact_us_path, method: :post) do
           .row
             .col-sm-5.col-sm-offset-1.col-xs-12
               = text_field_tag :first_name, nil, placeholder: t('form.first_name')
@@ -23,7 +23,7 @@
               span.glyphicon.glyphicon-chevron-down.select-arrow
           .row
             .col-sm-10.col-sm-offset-1.col-xs-12.text-center
-              = text_area :comment, nil, placeholder: t('form.comment')
+              = text_area :message, nil, placeholder: t('form.message')
               = submit_tag t('form.send'), class: 'btn btn-blue opacity'
 
       .col-md-4.col-xs-12.col-md-offset-1.follow-us

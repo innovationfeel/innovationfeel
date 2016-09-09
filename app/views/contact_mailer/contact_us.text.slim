@@ -1,0 +1,9 @@
+= "Yay! We've got a message throught Contact Us form on the Innovation Feel web-site!\n"
+= "==============================================\n"
+= "From: #{ @params[:first_name] } #{ @params[:last_name] }\n"
+= "Email: #{ @params[:email] }\n"
+= "Phone: #{ @params[:phone] }\n"
+= "Company: #{ @params[:company] }\n"
+= "Country: #{ @params[:country] }\n"
+= "Message:\n"
+= @params[:message]

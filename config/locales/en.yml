@@ -1,6 +1,6 @@
 en:
   title:
-    bring_your_ideas_into_life: BRING YOUR IDES INTO LIFE
+    bring_your_ideas_into_life: BRING YOUR IDEAS INTO LIFE
     who_we_are: WHO WE ARE
     what_we_do: WHAT WE DO
     contact_us: CONTACT US
@@ -82,7 +82,7 @@ en:
     email: Email
     company: Company (optional)
     phone: Phone (optional)
-    comment: Few words about your project
+    message: Few words about your project
     select_country: Select a Country
 
   a:

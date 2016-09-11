@@ -1,8 +1,12 @@
 // Media queries
 
 @media (min-width: $screen-lg-min)
+  #who-we-are-screen
+    height: 100%
   h1
-    font-size: em(72px)
+    font-size: em(56px)
+    &.large
+      font-size: em(72px)
   h2
     font-size: em(32px)
 
@@ -14,7 +18,9 @@
 
 @media (max-width: $screen-md-max)
   h1
-    font-size: em(68px)
+    font-size: em(52px)
+    &.large
+      font-size: em(68px)
   h2
     font-size: em(32px)
 
@@ -23,11 +29,14 @@
       a
         font-size: em(15px)
 
+
 @media (max-width: $screen-sm-max)
   html, body
     font-size: em(16px)
   h1
-    font-size: em(62px)
+    font-size: em(48px)
+    &.large
+      font-size: em(62px)
   h2
     font-size: em(28px)
   a
@@ -97,7 +106,9 @@
   html, body
     font-size: em(16px)
   h1
-    font-size: em(34px)
+    font-size: em(26px)
+    &.large
+      font-size: em(34px)
   h2
     font-size: em(18px)
   .btn-blue
@@ -130,14 +141,28 @@
           height: 22px
 
   #who-we-are-screen
-    height: 150%
+    background: none
+    h1
+      text-align: center
+    p.button
+      text-align: center
+    .container
+      .row
+        display: block
+        align-items: none
+        justify-content: none
+        .text-block
+          @include shadow(0, 0, 0, 0, transparent)
 
   #what-we-do-screen
     .container.data
       .images
-        span.glyphicon
-          width: 80px
-          height: 80px
+        padding-bottom: 0
+        a
+          margin-top: 10px
+          span.glyphicon
+            width: 100px
+            height: 100px
         .text-block
           display: none
           text-align: left

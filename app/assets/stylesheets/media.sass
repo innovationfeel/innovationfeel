@@ -10,6 +10,9 @@
   h2
     font-size: em(32px)
 
+  h3
+    font-size: em(24px)
+
   span.glyphicon
     &.web-mob-dev, &.ui-ux, &.cloud
       width: 130px
@@ -29,6 +32,13 @@
       a
         font-size: em(15px)
 
+  #technologies-screen
+    ul.also-we-use
+      li
+        span
+          width: 85px
+          height: 85px
+
 
 @media (max-width: $screen-sm-max)
   html, body
@@ -39,6 +49,8 @@
       font-size: em(62px)
   h2
     font-size: em(28px)
+  h3
+    font-size: em(22px)
   a
     font-size: em(18px)
   .btn-blue
@@ -85,6 +97,13 @@
             &.usability
               width: 85%
 
+  #technologies-screen
+    ul.also-we-use
+      li
+        span
+          width: 80px
+          height: 80px
+
   #contact-us-screen
     h2
       margin-top: 30px
@@ -111,6 +130,9 @@
       font-size: em(34px)
   h2
     font-size: em(18px)
+  h3
+    font-size: em(18px)
+    font-weight: bold
   .btn-blue
     font-size: em(18px)
 
@@ -170,6 +192,23 @@
           @include shadow(13px, 15px, 11px, -9px, $dark-grey)
           padding-top: 10px
           margin-bottom: 25px
+
+  #technologies-screen
+    background: none
+    ul.also-we-use
+      text-align: center
+      li
+        padding: 0
+        margin: 0 5px
+        span
+          width: 60px
+          height: 60px
+        &.up
+          span
+            margin-top: 0
+        &.down
+          span
+            margin-bottom: 0
 
   #contact-us-screen
     .follow-us

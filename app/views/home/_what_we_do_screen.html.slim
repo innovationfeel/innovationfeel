@@ -3,30 +3,48 @@
   .container.title
     .row
       .col-md-12.text-center
-        h1= t('title.areas_of_expertise')
+        h1= t('title.what_we_do')
 
   .container.data
     .row.images
-      .col-md-4.col-sm-4.col-xs-12.text-center.bounceInLeft.wow data-wow-offset='70' data-wow-duration='1.3s'
+      .hidden-xs.col-md-4.col-sm-4.text-center.bounceInLeft.wow data-wow-offset='70' data-wow-duration='1.3s'
         = link_to '#', title: t('a.web_apps'), target: 'web-dev' do
           span.glyphicon.web-dev
           p= t('a.web_apps')
-        .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
+
+      .visible-xs.col-xs-12.text-center
+        = link_to '#', title: t('a.web_apps'), target: 'web-dev' do
+          span.glyphicon.web-dev
+          p= t('a.web_apps')
+        .col-xs-12.text-block
           p= t('txt.web_development')
 
-      .col-md-4.col-sm-4.col-xs-12.text-center.bounceInUp.wow data-wow-offset='70' data-wow-duration='1.3s'
+
+      .hidden-xs.col-md-4.col-sm-4.text-center.bounceInUp.wow data-wow-offset='70' data-wow-duration='1.3s'
         = link_to '#', title: t('a.mobile_apps'), target: 'mob-dev' do
           span.glyphicon.mob-dev
           p= t('a.mobile_apps')
-        .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
+
+      .visible-xs.col-xs-12.text-center
+        = link_to '#', title: t('a.mobile_apps'), target: 'mob-dev' do
+          span.glyphicon.mob-dev
+          p= t('a.mobile_apps')
+        .col-xs-12.text-block
           p= t('txt.mobile_development')
 
-      .col-md-4.col-sm-4.col-xs-12.text-center.bounceInRight.wow data-wow-offset='70' data-wow-duration='1.3s'
+
+      .hidden-xs.col-md-4.col-sm-4.text-center.bounceInRight.wow data-wow-offset='70' data-wow-duration='1.3s'
         = link_to '#', title: t('a.product_design'), target: 'usability' do
           span.glyphicon.usability
           p= t('a.product_design')
-        .col-xs-12.hidden-sm.hidden-md.hidden-lg.text-block
+
+      .visible-xs.col-xs-12.text-center
+        = link_to '#', title: t('a.product_design'), target: 'usability' do
+          span.glyphicon.usability
+          p= t('a.product_design')
+        .col-xs-12.text-block
           p= t('txt.product_design_ux')
+
 
     .row.info.hidden-xs
       #web-dev.text-block.animated.active

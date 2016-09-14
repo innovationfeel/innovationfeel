@@ -1,0 +1,30 @@
+#technologies-screen
+
+  .container
+    .row
+      .col-md-10.col-md-offset-1
+        h1.text-center= t('title.technologies')
+        p= t('txt.we_build').html_safe
+        h3.text-center= t('title.why_ruby_on_rails')
+        ul.why-ruby-on-rails= t('txt.why_ruby_on_rails').html_safe
+
+        h3.text-center= t('title.also_we_use')
+        ul.also-we-use
+          li.up
+            span.glyphicon.angular
+          li.down
+            span.glyphicon.html5
+          li.up
+            span.glyphicon.css3
+          li.down
+            span.glyphicon.jquery
+          li.up
+            span.glyphicon.sql
+          li.down
+            span.glyphicon.redis
+          li.up
+            span.glyphicon.sidekiq
+          li.down
+            span.glyphicon.ios
+          li.up
+            span.glyphicon.android

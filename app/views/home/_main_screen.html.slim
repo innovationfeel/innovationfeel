@@ -66,10 +66,10 @@
         h1.large= t('title.bring_your_ideas_into_life')
         ul
           li
-            h2= t('title.web_apps')
+            h2= link_to t('title.web_apps'), '#', title: t('title.web_apps'), class: 'scroll', id: 'click-web-dev', target: 'what-we-do-screen'
           li
-            h2= t('title.mobile_apps')
+            h2= link_to t('title.mobile_apps'), '#', title: t('title.mobile_apps'), class: 'scroll', id: 'click-mob-dev', target: 'what-we-do-screen'
           li
-            h2= t('title.product_design')
+            h2= link_to t('title.product_design'), '#', title: t('title.product_design'), class: 'scroll', id: 'click-usability', target: 'what-we-do-screen'
         
-        = link_to t('a.get_in_touch'), '#', class: 'btn btn-blue opacity scroll', role: 'button', target: 'contact-us-screen'
+        = link_to t('a.get_in_touch'), '#', class: 'btn btn-blue opacity scroll', title: t('a.get_in_touch'), role: 'button', target: 'contact-us-screen'

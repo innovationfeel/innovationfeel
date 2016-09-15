@@ -8,12 +8,12 @@
   .container.data
     .row.images
       .hidden-xs.col-md-4.col-sm-4.text-center.bounceInLeft.wow data-wow-offset='70' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.web_apps'), target: 'web-dev' do
+        = link_to '#', title: t('a.web_apps'), id: 'link-web-dev', target: 'web-dev' do
           span.glyphicon.web-dev
           p= t('a.web_apps')
 
       .visible-xs.col-xs-12.text-center
-        = link_to '#', title: t('a.web_apps'), target: 'web-dev' do
+        = link_to '#', title: t('a.web_apps'), id: 'link-web-dev', target: 'web-dev' do
           span.glyphicon.web-dev
           p= t('a.web_apps')
         .col-xs-12.text-block
@@ -21,12 +21,12 @@
 
 
       .hidden-xs.col-md-4.col-sm-4.text-center.bounceInUp.wow data-wow-offset='70' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.mobile_apps'), target: 'mob-dev' do
+        = link_to '#', title: t('a.mobile_apps'), id: 'link-mob-dev', target: 'mob-dev' do
           span.glyphicon.mob-dev
           p= t('a.mobile_apps')
 
       .visible-xs.col-xs-12.text-center
-        = link_to '#', title: t('a.mobile_apps'), target: 'mob-dev' do
+        = link_to '#', title: t('a.mobile_apps'), id: 'link-mob-dev', target: 'mob-dev' do
           span.glyphicon.mob-dev
           p= t('a.mobile_apps')
         .col-xs-12.text-block
@@ -34,12 +34,12 @@
 
 
       .hidden-xs.col-md-4.col-sm-4.text-center.bounceInRight.wow data-wow-offset='70' data-wow-duration='1.3s'
-        = link_to '#', title: t('a.product_design'), target: 'usability' do
+        = link_to '#', title: t('a.product_design'), id: 'link-usability', target: 'usability' do
           span.glyphicon.usability
           p= t('a.product_design')
 
       .visible-xs.col-xs-12.text-center
-        = link_to '#', title: t('a.product_design'), target: 'usability' do
+        = link_to '#', title: t('a.product_design'), id: 'link-usability', target: 'usability' do
           span.glyphicon.usability
           p= t('a.product_design')
         .col-xs-12.text-block

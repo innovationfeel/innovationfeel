@@ -21,6 +21,13 @@
     li
       display: inline-block
       margin: 0 30px
+      a
+        color: #fff
+        font-size: em(16px)
+        @include transition(all, 0.2s, ease)
+        &:hover, &:focus, &:active
+          color: $blue
+          text-decoration: none
     .btn
       margin-top: 30px
     .row

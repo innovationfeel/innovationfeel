@@ -10,6 +10,18 @@ ready = ->
       hideMainMenu()
     return false
 
+  $('a#click-web-dev').click ->
+    $('a#link-web-dev').click()
+    $('a#link-web-dev').addClass('active')
+
+  $('a#click-mob-dev').click ->
+    $('a#link-mob-dev').click()
+    $('a#link-mob-dev').addClass('active')
+
+  $('a#click-usability').click ->
+    $('a#link-usability').click()
+    $('a#link-usability').addClass('active')
+
   if !isMobile()
     $('#what-we-do-screen .container.data .images a').first().addClass('active')
 

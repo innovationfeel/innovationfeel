@@ -17,7 +17,7 @@
           span.glyphicon.web-dev
           p= t('a.web_apps')
         .col-xs-12.text-block
-          p= t('txt.web_development')
+          p= t('txt.web_development').html_safe
 
 
       .hidden-xs.col-md-4.col-sm-4.text-center.bounceInUp.wow data-wow-offset='70' data-wow-duration='1.3s'
@@ -30,7 +30,7 @@
           span.glyphicon.mob-dev
           p= t('a.mobile_apps')
         .col-xs-12.text-block
-          p= t('txt.mobile_development')
+          p= t('txt.mobile_development').html_safe
 
 
       .hidden-xs.col-md-4.col-sm-4.text-center.bounceInRight.wow data-wow-offset='70' data-wow-duration='1.3s'
@@ -43,7 +43,7 @@
           span.glyphicon.usability
           p= t('a.product_design')
         .col-xs-12.text-block
-          p= t('txt.product_design_ux')
+          p= t('txt.product_design_ux').html_safe
 
 
     .row.info.hidden-xs
@@ -52,7 +52,7 @@
           .row
             .col-md-6.col-md-offset-1
               h2= t('title.web_development')
-              p= t('txt.web_development')
+              p= t('txt.web_development').html_safe
             .col-md-5.schema
               = image_tag 'schema-web-dev.svg', class: 'web-dev', alt: ''
 
@@ -61,7 +61,7 @@
           .row
             .col-md-6.col-md-offset-1
               h2= t('title.mobile_development')
-              p= t('txt.mobile_development')
+              p= t('txt.mobile_development').html_safe
             .col-md-5.schema
               = image_tag 'schema-mob-dev.svg', class: 'mob-dev', alt: ''
 
@@ -70,6 +70,6 @@
           .row
             .col-md-6.col-md-offset-1
               h2= t('title.product_design_ux')
-              p= t('txt.product_design_ux')
+              p= t('txt.product_design_ux').html_safe
             .col-md-5.schema
               = image_tag 'schema-usability.svg', class: 'usability', alt: ''        

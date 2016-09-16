@@ -13,61 +13,47 @@ en:
     product_design_ux: Product Design and UX
     web_apps: Web apps
     mobile_apps: Mobile apps
-    send_a_message: Send a message
+    send_a_message: Tell Us About Your Project
     why_ruby_on_rails: Why Ruby on Rails?
     also_we_use: Also we use
 
   txt:
-    who_we_are: "<p><b>Innovation Feel</b> is a team of passionate engineers and designers from <b>Ukraine</b>.\n
+    who_we_are: "<p><b>Innovation Feel</b> is a software engineering and technology US company that was founded\n
+    by the team of passionate engineers and designers from <b>Ukraine</b>.\n
     We design and build friendly digital products in Web and Mobile areas.</p>\n
     <p>Our team consists of <b>Senior and Middle developers</b> to provide best quality of development service.\n
     We help to innovate your business and move it to the next level.\n
     Adapt and make it competitive in the ever-changing landscape of technology.</p>\n
     <p>We understand that technologies can be complicated for non technical people.\n
-    That is why our development process is designed to keep it simple and clear in understanding for you.</p>\n
+    That's why our development process is designed to keep it simple and clear in understanding for you.</p>\n
     <p>We build long term relations and want you to feel happy during our partnership.</p>"
 
-    web_development: "We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice."
+    web_development: "<p>We combine best practices for user experience,\n
+    performance and cloud infrastructure to help your project succeed.\n
+    Our focus is on across-device solutions that work on every systems.\n
+    We develop Web products to ensure that they are usable and accessible on different platforms,\n
+    including Smartphones and Tablets, using a responsive design approach and\n
+    <a href='#' class='scroll' target='technologies-screen'>modern technologies</a>.</p>\n
+    <p>Whether your project is a small internal system that does your work more efficiently\n
+    or a million user consumer application, our team can help starting with strategy\n
+    all the way through delivery and maintenance.</p>\n
+    <p>Let's <a href='#' class='scroll' target='contact-us-screen'>build a great app</a> together.</p>"
 
-    mobile_development: "We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice."
+    mobile_development: "<p>Smartphones or Tablets today are the things of daily use.</p>\n
+    <p>&#8226; Having an app may be the most important thing you can do to build your brand.<br />\n
+    &#8226; It must be people-friendly, designed to give users a pleasant, effective experience and keep them returning for more.<br />\n
+    &#8226; The mobile application must deliver more clients for you.</p>\n
+    <p>That’s exactly how we can help you to innovate your business. Our team specializes in building mobile apps\n
+    for iOS and Android platforms. Whether you demand app development solution or it is a custom app development project,\n
+    we are capable of tackling it in the best manner.</p>"
 
-    product_design_ux: "We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice.We are the team that after long term of working on the different outsourcing\n
-    companies we have established own Сompany Innovation Feel to provide best service for web\n
-    and mobile development. We are the team of Senior and Middle developers with big expirience\n
-    of working with foreign customers with good communication skills. We follow the SCRUM\n
-    methodology and Agile practice."
+    product_design_ux: "<p>Of course, the most important part of any application is the User Experience (UX).\n
+    It does not matter what type of application and what the goal, someone is always on the other side of the screen.</p>\n
+    <p>User Experience is much more than a site’s usability, it is often confused with User Interface (UI).\n
+    A User Interface is a point of interaction and a means of communication between a user and application.\n
+    Interface is a part of the greater User Experience.</p>\n
+    <p>Innovation Feel team always designs all products with the User in Mind\n
+    and applies best practices for both UX and UI in the client's projects.</p>"
 
     we_build: "We build Web applications and Mobile APIs based on the <b>Ruby on Rails</b>\n
     framework using modern technologies and best practices."
@@ -75,17 +61,17 @@ en:
     why_ruby_on_rails: "<li><b>Efficient in terms of time:</b> The process of development is faster\n
     than with other frameworks and languages, partly because of the object-oriented nature of Ruby\n
     and the large collection of open source code available within the Rails community. That's why time\n
-    to market would be cut down amazingly.</li>\n
+    to final product would be cut down amazingly.</li>\n
     <li><b>Rapid application development:</b> Rails is good for rapid application development (RAD),\n
     as the framework makes it easy to accommodate changes.</li>\n
     <li><b>Efficient in terms of cost:</b> Ruby on Rails is free and does not cost anything to download or use.\n
     It also runs on a free operating system and works with mostly free databases and web servers.</li>\n
     <li><b>Testing:</b> Rails has developed a strong focus on testing and has good testing frameworks.</li>\n
-    <li><b>Allows a high level of interaction:</b> Ruby on Rails is suitable for web applicatons that require\n
+    <li><b>Allows a high level of interaction:</b> Ruby on Rails is suitable for web applications that require\n
     a lot of content input, storage and management because you would be easily navigating the site, managing\n
     and uploading content. If you want to build a CRM, CMS or e-commerce system, Ruby on Rails is a perfect fit.</li>"
 
-    all_rights_reserved: '&copy; 2016 Innovation Feel, LLC. All Rights Reserved.'
+    all_rights_reserved: '&copy; 2016 Innovation Feel, LLC'
 
   language:
     english: ENGLISH

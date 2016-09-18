@@ -1,5 +1,8 @@
 @import 'bourbon'
 
+.input-error
+  border: 2px solid red
+
 #contact-us-screen
   background: image-url('contact-us-bg.jpg') no-repeat center center
   background-size: cover
@@ -24,7 +27,10 @@
       border: none
       outline: 0
       border-bottom: 1px solid #fff
-    input[type=submit]
+      &.error
+        @extend .input-error
+
+    a.submit
       margin-bottom: 30px
     textarea
       margin: 25px 0

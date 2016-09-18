@@ -9,22 +9,25 @@
 
       .col-md-7.col-xs-12.contact-form
         h2.text-center= t('title.send_a_message')
-        = form_tag(contact_us_path, method: :post) do
+
+        = form_for :client, url: contact_us_path, method: :post do |f|
+          .row
+            #form-messages.col-sm-10.col-sm-offset-1.col-xs-12
           .row
             .col-sm-5.col-sm-offset-1.col-xs-12
-              = text_field_tag :first_name, nil, placeholder: t('form.first_name')
-              = text_field_tag :last_name, nil, placeholder: t('form.last_name')
-              = email_field_tag :email, nil, placeholder: t('form.email')
+              = f.text_field :first_name, placeholder: t('form.first_name')
+              = f.text_field :last_name, placeholder: t('form.last_name')
+              = f.email_field :email, placeholder: t('form.email')
               
             .col-sm-5.col-xs-12
-              = text_field_tag :phone, nil, placeholder: t('form.phone')
-              = text_field_tag :company, nil, placeholder: t('form.company')
-              = country_select('', :country, include_blank: t('form.select_country'), selected: 'UA')
+              = f.text_field :phone, placeholder: t('form.phone')
+              = f.text_field :company, placeholder: t('form.company')
+              = country_select(:client, :country, include_blank: t('form.select_country'), selected: 'UA')
               span.glyphicon.glyphicon-chevron-down.select-arrow
           .row
             .col-sm-10.col-sm-offset-1.col-xs-12.text-center
-              = text_area :message, nil, placeholder: t('form.message')
-              = submit_tag t('form.send'), class: 'btn btn-blue opacity'
+              = f.text_area :message, placeholder: t('form.message')
+              = link_to t('form.send'), '#', class: 'submit btn btn-blue opacity'
 
       .col-md-4.col-xs-12.col-md-offset-1.follow-us
       

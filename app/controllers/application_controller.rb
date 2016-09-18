@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
   private
 
   def set_locale
-    if %w(en es de ru).include? params[:locale]
-      I18n.locale = params[:locale] || I18n.default_locale
-    end
+    I18n.locale =
+      %w(en es de ru).include?(params[:locale]) ? params[:locale] : I18n.default_locale
   end
 end

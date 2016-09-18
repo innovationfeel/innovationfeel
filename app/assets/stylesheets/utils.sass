@@ -35,6 +35,20 @@ html, body
     li
       display: inline-block
 
+.message
+  width: 100%
+  padding: 10px
+  text-align: center
+  @include border-radius(2%)
+  &.success
+    border: 1px solid $green
+    background-color: $light-green
+    color: $green
+  &.error
+    border: 1px solid $red
+    background-color: $light-red
+    color: $red
+  
 .xs-menu
   position: fixed
   z-index: 2
@@ -66,6 +80,10 @@ a
   font-size: em(20px)
   &:hover
     text-decoration: none
+  &.disabled
+    opacity: 0.5
+    pointer-events: none
+    cursor: default
 h1
   font-family: 'BebasNeueRegular', sans-serif
 h2

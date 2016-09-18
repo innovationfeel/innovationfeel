@@ -110,3 +110,7 @@ en:
 
     title:
       logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'
+
+  messages:
+    has_been_sent: "Your message has been sent.<br />We'll contact you very soon. Thank you!"
+    something_went_wrong: 'Something went wrong. Please try again.'

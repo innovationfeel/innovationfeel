@@ -70,6 +70,59 @@ ready = ->
   ).on 'hide.bs.popover', (e) ->
     $(this).find('span').removeClass('active')
 
+
+  # Contact Form
+  $('#contact-us-screen form a.submit').click ->
+    startSending()
+    contactForm = $('#contact-us-screen form')
+    contactForm.find('input, select, textarea').removeClass('error')
+    inputFirstName = contactForm.find('input#client_first_name')
+    inputEmail = contactForm.find('input#client_email')
+    selectCountry = contactForm.find('select#client_country')
+    textareaMessage = contactForm.find('textarea#client_message')
+
+    isError = false
+    if inputFirstName.val() == ''
+      inputFirstName.addClass('error')
+      isError = true
+    if inputEmail.val() == ''
+      inputEmail.addClass('error')
+      isError = true
+    if selectCountry.val() == ''
+      selectCountry.addClass('error')
+      isError = true
+    if textareaMessage.val() == ''
+      textareaMessage.addClass('error')
+      isError = true
+
+    if isError
+      stopSending()
+    else
+      contactForm.submit()
+    return false
+
+  $('#contact-us-screen form').on 'submit', (e) ->
+    $.ajax
+      type: 'POST'
+      dataType: 'json'
+      url: $(this).attr('action')
+      data: $(this).serialize()
+      success: (data) ->
+        showSuccessMessage('#form-messages', data.message)
+        stopSending()
+        return false
+      error: (data) ->
+        showErrorMessage('#form-messages', data.responseJSON.message)
+        stopSending()
+        return false
+    e.preventDefault()
+
+  $('#contact-us-screen form').find('input, select, textarea').on 'change', (e) ->
+    if $(this).val() != ''
+      $(this).removeClass('error')
+
+
+
   # hide popovers on outside click
   $(document).on 'click', (e) ->
     $('a[rel~=popover]').each ->
@@ -101,6 +154,32 @@ hideMainMenu = ->
 hideLangMenu = ->
   $('#header .earth-globe-xs span').removeClass('active')
   $('#header .xs-lang-menu').animate({'margin-right': '-100%'})
+
+startSending = ->
+  $('#contact-us-screen form a.submit').text('SENDING...')
+  $('#contact-us-screen form a.submit').addClass('disabled')
+
+stopSending = ->
+  $('#contact-us-screen form a.submit').text('SEND')
+  $('#contact-us-screen form a.submit').removeClass('disabled')
+
+showSuccessMessage = (block, message) ->
+  $(block).html(successMessage(message))
+  $(block).find('.message.success').delay(5000).fadeOut 300, ->
+    $(this).remove()
+    return false
+
+showErrorMessage = (block, message) ->
+  $(block).html(errorMessage(message))
+  $(block).find('.message.error').delay(5000).fadeOut 300, ->
+    $(this).remove()
+    return false
+
+successMessage = (message) ->
+  return "<div class='message success'>" + message + "</div>"
+
+errorMessage = (message) ->
+  return "<div class='message error'>" + message + "</div>"
 
 # Because of the turbolinks
 $(document).ready(ready)

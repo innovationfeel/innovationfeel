@@ -24,10 +24,10 @@
                     span.glyphicon.earth-globe
                   .earth-globe-popover-content.hide
                     ul
-                      li= link_to t('language.english'), '#', class: 'active'
-                      li= link_to t('language.spanish'), '#'
-                      li= link_to t('language.german'),  '#'
-                      li= link_to t('language.russian'), '#'
+                      li= link_to t('language.english'), '/?locale=en', class: I18n.locale.to_s == 'en' ? 'active' : ''
+                      li= link_to t('language.german'),  '/?locale=de', class: I18n.locale.to_s == 'de' ? 'active' : ''
+                      li= link_to t('language.spanish'), '/?locale=es', class: I18n.locale.to_s == 'es' ? 'active' : ''
+                      li= link_to t('language.russian'), '/?locale=ru', class: I18n.locale.to_s == 'ru' ? 'active' : ''
 
               li= link_to '#', class: 'icon' do
                 span.glyphicon.linkedin
@@ -39,10 +39,10 @@
       .hidden-sm.hidden-md.hidden-lg
         .xs-lang-menu.xs-menu
           ul
-            li= link_to t('language.english'), '#', class: 'xs-menu-link active'
-            li= link_to t('language.spanish'), '#', class: 'xs-menu-link'
-            li= link_to t('language.german'),  '#', class: 'xs-menu-link'
-            li= link_to t('language.russian'), '#', class: 'xs-menu-link'
+            li= link_to t('language.english'), '/?locale=en', class: "xs-menu-link #{I18n.locale.to_s == 'en' ? 'active' : ''}"
+            li= link_to t('language.german'),  '/?locale=de', class: "xs-menu-link #{I18n.locale.to_s == 'de' ? 'active' : ''}"
+            li= link_to t('language.spanish'), '/?locale=es', class: "xs-menu-link #{I18n.locale.to_s == 'es' ? 'active' : ''}"
+            li= link_to t('language.russian'), '/?locale=ru', class: "xs-menu-link #{I18n.locale.to_s == 'ru' ? 'active' : ''}"
         .xs-main-menu.xs-menu
           nav
             ul

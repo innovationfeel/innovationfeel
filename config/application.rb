@@ -19,6 +19,8 @@ module Innovationfeel
     config.i18n.available_locales = [:en, :de, :es, :ru]
 
     # Fonts
-    config.assets.paths << Rails.root.join('app', 'assets', 'fonts') 
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    # BG videos
+    config.assets.paths << Rails.root.join('app', 'assets', 'videos')
   end
 end

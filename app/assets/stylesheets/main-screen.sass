@@ -1,8 +1,6 @@
 @import 'bourbon'
 
 #main-screen
-  background: image-url('home-bg.jpg') no-repeat center center
-  background-size: cover
   position: relative
   height: 100%
   color: #fff
@@ -10,7 +8,17 @@
   &::before
     @extend .before
     background-color: #000
-    opacity: 0.5
+    opacity: 0.6
+
+  video
+    position: fixed
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -100
+    background: image-url('home-bg.jpg') no-repeat center center
+    background-size: cover
 
   .main-content
     height: 70%

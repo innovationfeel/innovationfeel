@@ -24,3 +24,7 @@
 /!ssl_certificate/*
 /!help/*
 .rvmrc
+
+/config/database.yml
+/config/settings.yml
+/config/secrets.yml

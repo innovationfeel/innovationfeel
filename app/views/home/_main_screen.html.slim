@@ -1,7 +1,5 @@
 #main-screen
-  video.hidden-sx.hidden-sm  autoplay="true" loop="" muted="" playsinline="" poster="/assets/home-bg.jpg"
-    source src="/assets/bg1280.webm" type="video/webm"
-    source src="/assets/bg1280.mp4" type="video/mp4"
+  = video_tag ['bg1280.webm', 'bg1280.mp4'], autoplay: true, loop: true, muted: true, poster: 'home-bg.jpg', class: 'hidden-sx hidden-sm'
 
   #header data-spy='affix' data-offset-top='1'
     .container

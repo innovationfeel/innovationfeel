@@ -46,7 +46,7 @@ end
 
 namespace :deploy do
   desc "Create config files from examples"
-  task :make_config_files do
+  task :init_config_files do
     on roles(:app) do
       execute "cp #{deploy_to}/database.yml #{release_path}/config/database.yml"
       execute "cp #{deploy_to}/secrets.yml #{release_path}/config/secrets.yml"
@@ -80,11 +80,11 @@ namespace :deploy do
     end
   end
 
-  before :starting,     :check_revision
-  before :migrating,    :make_config_files
-  after  :finishing,    :compile_assets
-  after  :finishing,    :cleanup
-  after  :finishing,    :restart
+  before :starting,       :check_revision
+  before :compile_assets, :init_config_files
+  after  :finishing,      :compile_assets
+  after  :finishing,      :cleanup
+  after  :finishing,      :restart
 end
 
 # namespace :rakes do

@@ -1,4 +1,8 @@
 es:
+  meta:
+    keywords: 'custom web development, custom mobile development, web product development, web application development, web services provider, web development companies, mobile application development, mobile product development'
+    description: 'Innovation Feel is a technology company delivering custom friendly web and mobile products.'
+    title: 'Custom Web and Mobile apps engineering'
   title:
     bring_your_ideas_into_life: BRING YOUR IDEAS INTO LIFE
     who_we_are: WHO WE ARE
@@ -18,14 +22,13 @@ es:
     also_we_use: Also we use
 
   txt:
-    who_we_are: "<p><b>Innovation Feel</b> is a software engineering and technology US company that was founded\n
-    by the team of passionate engineers and designers from <b>Ukraine</b>.\n
+    who_we_are: "<p><b>Innovation Feel</b> is a software outsourcing US company that was founded\n
+    by the team of passionate engineers and designers from <b>Eastern Europe</b>.\n
     We design and build friendly digital products in Web and Mobile areas.</p>\n
     <p>Our team consists of <b>Senior and Middle developers</b> to provide best quality of development service.\n
-    We help to innovate your business and move it to the next level.\n
-    Adapt and make it competitive in the ever-changing landscape of technology.</p>\n
-    <p>We understand that technologies can be complicated for non technical people.\n
-    That's why our development process is designed to keep it simple and clear in understanding for you.</p>\n
+    We will do our best to innovate your business, take it to higher level and make it profitable.</p>\n
+    <p>We realize that technologies can be complicated for non technical people.\n
+    That's why our manner of development process was chosen to keep it simple and clear for your understanding.</p>\n
     <p>We build long term relations and want you to feel happy during our partnership.</p>"
 
     web_development: "<p>We combine best practices for user experience,\n
@@ -39,7 +42,7 @@ es:
     all the way through delivery and maintenance.</p>\n
     <p>Let's <a href='#' class='scroll' target='contact-us-screen'>build a great app</a> together.</p>"
 
-    mobile_development: "<p>Smartphones or Tablets today are the things of daily use.</p>\n
+    mobile_development: "<p>Smartphones and Tablets today are the things of daily use.</p>\n
     <p>&#8226; Having an app may be the most important thing you can do to build your brand.<br />\n
     &#8226; It must be people-friendly, designed to give users a pleasant, effective experience and keep them returning for more.<br />\n
     &#8226; The mobile application must deliver more clients for you.</p>\n

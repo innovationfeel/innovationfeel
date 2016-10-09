@@ -4,9 +4,9 @@
       .hidden-xs.col-md-8.col-md-offset-4.col-sm-12.text-block.bounceInRight.wow data-wow-offset='100' data-wow-duration='1s'
         h1= t('title.who_we_are')
         p= t('txt.who_we_are').html_safe
-        p.button= link_to t('a.lets_get_started'), '#', class: 'btn btn-blue scroll', target: 'contact-us-screen'
+        p.button= link_to t('a.lets_get_started'), '#', class: 'btn btn-blue scroll', id: 'lets-get-started', target: 'contact-us-screen'
 
       .visible-xs.col-sx-12.text-block
         h1= t('title.who_we_are')
         p= t('txt.who_we_are').html_safe
-        p.button= link_to t('a.lets_get_started'), '#', class: 'btn btn-blue scroll', target: 'contact-us-screen'
+        p.button= link_to t('a.lets_get_started'), '#', class: 'btn btn-blue scroll', id: 'lets-get-started', target: 'contact-us-screen'

@@ -25,7 +25,7 @@
               li= link_to t('a.about_us'),   '#', class: 'menu-link scroll', target: 'who-we-are-screen'
               li= link_to t('a.what_we_do'), '#', class: 'menu-link scroll', target: 'what-we-do-screen'
               li= link_to t('a.blog'), blog_path, class: 'menu-link'
-              li= link_to t('a.contact_us'), '#', class: 'menu-link scroll', target: 'contact-us-screen'
+              li= link_to t('a.contact_us'), '#', class: 'menu-link scroll', id: 'header-contact-us', target: 'contact-us-screen'
 
             / li
             /   span.earth-globe-container
@@ -66,7 +66,7 @@
               li= link_to t('a.what_we_do'),   '#', class: 'xs-menu-link scroll', target: 'what-we-do-screen'
               li= link_to t('a.technologies'), '#', class: 'xs-menu-link scroll', target: 'technologies-screen'
               li= link_to t('a.blog'), blog_path, class: 'xs-menu-link'
-              li= link_to t('a.contact_us'),   '#', class: 'xs-menu-link scroll', target: 'contact-us-screen'
+              li= link_to t('a.contact_us'),   '#', class: 'xs-menu-link scroll', id: 'header-contact-us', target: 'contact-us-screen'
             li
               = link_to 'https://www.linkedin.com/company/innovation-feel-llc', target: '_blank', class: 'icon' do
                 span.glyphicon.linkedin
@@ -74,5 +74,7 @@
                 span.glyphicon.fb
               = link_to 'https://twitter.com/innovationfeel', class: 'icon', target: '_blank' do
                 span.glyphicon.twitter
+              = link_to 'https://plus.google.com/u/0/b/115352757860748362423/115352757860748362423', target: '_blank', class: 'icon' do
+                span.glyphicon.google-plus
           .all-rights
             = t('txt.all_rights_reserved').html_safe

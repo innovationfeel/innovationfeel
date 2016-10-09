@@ -25,6 +25,17 @@ ready = ->
     $('html, body').animate {
       scrollTop: $('#' + $(this).attr('target')).offset().top - 40
     }, 700
+
+    # Conversions report
+    if isButtonGetInTouch(this)
+      ga 'send', 'event', 'ButtonGetInTouch', 'click'
+
+    if isButtonLetsGetStarted(this)
+      ga 'send', 'event', 'ButtonLetsGetStarted', 'click'
+
+    if isMainMenuContactUs(this)
+      ga 'send', 'event', 'MainMenuContactUs', 'click'
+
     if $(this).hasClass('xs-menu-link')
       hideMainMenu()
     return false
@@ -153,6 +164,17 @@ ready = ->
 isMobile = ->
   # XS-...
   return $(window).width() < 768
+
+
+isButtonGetInTouch = (element) ->
+  $(element).attr('id') == 'get-in-touch' && $(element).attr('target') == 'contact-us-screen'
+
+isButtonLetsGetStarted = (element) ->
+  $(element).attr('id') == 'lets-get-started' && $(element).attr('target') == 'contact-us-screen'
+
+isMainMenuContactUs = (element) ->
+  $(element).attr('id') == 'header-contact-us' && $(element).attr('target') == 'contact-us-screen'
+
 
 earthGlobeContent = ->
   return $('span.earth-globe-container a[rel~=popover]').parent().find('.earth-globe-popover-content').html()

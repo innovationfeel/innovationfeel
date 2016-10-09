@@ -1,0 +1,11 @@
+= render 'home/header', blog: true
+
+#blog.container
+  .row
+    .col-md-8.col-md-offset-2
+      = render partial: 'post', collection: @posts
+  .row
+    .col-md-8.col-md-offset-2.text-center
+      = paginate @posts
+
+= render 'home/footer', blog: true

@@ -20,6 +20,7 @@ en:
     send_a_message: Tell Us About Your Project
     why_ruby_on_rails: Why Ruby on Rails?
     also_we_use: Also we use
+    blog: BLOG
 
   txt:
     who_we_are: "<p><b>Innovation Feel</b> is a software outsourcing US company that was founded\n
@@ -100,6 +101,8 @@ en:
     about_us: ABOUT US
     what_we_do: WHAT WE DO
     technologies: TECHNOLOGIES
+    blog: BLOG
+    back: Back
     contact_us: CONTACT US
     get_in_touch: GET IN TOUCH
     lets_get_started: LET'S GET STARTED

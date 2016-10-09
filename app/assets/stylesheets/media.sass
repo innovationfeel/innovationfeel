@@ -64,17 +64,19 @@
   #main-screen
     background: image-url('home-bg.jpg') no-repeat center center
     background-size: cover
-    #header
-      .lg-menu nav
-        .earth-globe-container
-          margin-right: 10px
-        li
-          line-height: 40px
-          padding: 5px 0 0 20px
-      a.logo img
-        height: 40px
-        &:first-child
-          margin-right: 10px
+  #header
+    .additional-logo-title
+      margin: 17px 0 0 10px
+    .lg-menu nav
+      .earth-globe-container
+        margin-right: 10px
+      li
+        line-height: 40px
+        padding: 5px 0 0 20px
+    a.logo img
+      height: 40px
+      &:first-child
+        margin-right: 10px
 
   #who-we-are-screen
     background-size: cover
@@ -113,14 +115,19 @@
       a
         font-size: em(17px)
 
+  #blog
+    padding-top: 60px
+  #post
+    padding-top: 70px
+
   #footer
     nav
       li
-        padding: 5px 0 0 20px
+        padding: 5px 0 0 15px
         a
           font-size: em(15px)
     .all-rights
-      font-size: em(14px)
+      font-size: em(13px)
 
 
 @media (max-width: $screen-xs-max)
@@ -149,26 +156,29 @@
       li
         margin: 0 10px
 
-    #header
-      background: $dark-grey
-      padding: 5px 0
-      @include shadow(0, 3px, 3px, -3px, #000)
-      a.logo img
-        height: 30px
-        &.img-logo
-          margin-right: 5px
-        
-      a.earth-globe-xs
-        float: right
-        width: 30px
-        height: 30px
-        line-height: 30px
-        display: block
-        padding: 4px
-        margin-right: 15px
-        span
-          width: 22px
-          height: 22px
+  #header
+    background: $dark-grey
+    padding: 5px 0
+    @include shadow(0, 3px, 3px, -3px, #000)
+    .additional-logo-title
+      margin: 11px 0 0 8px
+      font-size: em(10px)
+    a.logo img
+      height: 30px
+      &.img-logo
+        margin-right: 5px
+      
+    a.earth-globe-xs
+      float: right
+      width: 30px
+      height: 30px
+      line-height: 30px
+      display: block
+      padding: 4px
+      margin-right: 15px
+      span
+        width: 22px
+        height: 22px
 
   #who-we-are-screen
     background: none
@@ -229,6 +239,11 @@
         span.glyphicon
           width: 35px
           height: 35px
+
+  #blog
+    padding-top: 40px
+  #post
+    padding-top: 50px
 
   #footer
     nav

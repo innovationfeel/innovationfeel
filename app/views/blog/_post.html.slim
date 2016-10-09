@@ -1,0 +1,4 @@
+.short-post
+  h2 = link_to post.title, blog_show_path(post), title: post.title
+  p.body = post.body
+  p.date = post.created_at.strftime('%B %d, %Y')

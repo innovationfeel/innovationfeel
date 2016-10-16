@@ -1,0 +1,12 @@
+.field
+  = local_assigns[:field].label :title
+  br
+  = local_assigns[:field].text_field :title, autofocus: true
+
+.field
+  = local_assigns[:field].label :body
+  br
+  = local_assigns[:field].text_area :body
+
+.actions.text-center
+  = local_assigns[:field].submit t('a.save'), class: 'btn btn-blue'

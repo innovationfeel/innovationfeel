@@ -1,11 +1,17 @@
-= render 'home/header', blog: true
+= render 'home/header', home: false, blog: true
 
 #blog.container
   .row
     .col-md-8.col-md-offset-2
+      - if user_signed_in?
+        #add-post.text-right
+          = link_to t('a.logout'), destroy_user_session_path, method: :delete
+          = '&nbsp;'.html_safe
+          = link_to t('a.add_post'), new_admin_post_path, class: 'btn btn-blue'
+
       = render partial: 'post', collection: @posts
   .row
     .col-md-8.col-md-offset-2.text-center
       = paginate @posts
 
-= render 'home/footer', blog: true
+= render 'home/footer', home: false

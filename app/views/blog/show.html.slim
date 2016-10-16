@@ -7,7 +7,9 @@
         = link_to "&laquo; #{t('a.back')}".html_safe, blog_path
 
       h1.text-center = @post.title
-      p = @post.body.html_safe
+      p.body = @post.body.html_safe
       p.date = @post.created_at.strftime('%B %d, %Y')
+      - if user_signed_in?
+        p.edit = link_to t('a.edit'), edit_admin_post_path(@post)
 
 = render 'home/footer', blog: true

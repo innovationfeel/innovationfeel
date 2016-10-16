@@ -21,6 +21,8 @@ en:
     why_ruby_on_rails: Why Ruby on Rails?
     also_we_use: Also we use
     blog: BLOG
+    admin: ADMIN
+    login: Log in
 
   txt:
     who_we_are: "<p><b>Innovation Feel</b> is a software outsourcing US company that was founded\n
@@ -113,6 +115,11 @@ en:
     fb: Facebook
     twitter: Twitter
     google_plus: Google+
+    edit: Edit
+    add_post: Add Post
+    edit_post: Edit Post
+    save: Save
+    logout: Logout
 
     title:
       logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'

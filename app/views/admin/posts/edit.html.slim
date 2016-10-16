@@ -1,0 +1,8 @@
+= render 'home/header', home: false, admin: true
+
+#new-post.container
+  .row
+    .col-md-8.col-md-offset-2
+      h2.text-center = t('a.edit_post')
+      = form_for(@post, as: :post, url: admin_post_path(@post)) do |field|
+        = render 'form', field: field

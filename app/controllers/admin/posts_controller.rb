@@ -20,7 +20,7 @@ module Admin
 
     def update
       if @post.update(post_params)
-        redirect_to blog_path
+        redirect_to blog_show_path(@post)
       else
         render :edit
       end
@@ -37,7 +37,7 @@ module Admin
     end
 
     def post_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title, :body, {images: []})
     end
   end
 end

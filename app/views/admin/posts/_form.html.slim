@@ -4,6 +4,9 @@
   = local_assigns[:field].text_field :title, autofocus: true
 
 .field
+  = local_assigns[:field].file_field :images, multiple: true
+
+.field
   = local_assigns[:field].label :body
   br
   = local_assigns[:field].text_area :body

@@ -3,10 +3,15 @@
 #post.container
   .row
     .col-md-8.col-md-offset-2
-      .back
-        = link_to "&laquo; #{t('a.back')}".html_safe, blog_path
+      / .back
+      /   = link_to "&laquo; #{t('a.back')}".html_safe, blog_path
 
       h1.text-center = @post.title
+
+      p.images
+        - @post.images.each do |image|
+          = image_tag image.url
+
       p.body = @post.body.html_safe
       p.date = @post.created_at.strftime('%B %d, %Y')
       - if user_signed_in?

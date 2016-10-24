@@ -1,6 +1,10 @@
 .short-post
   h2 = link_to post.title, blog_show_path(post), title: post.title
-  p.body = post.body
+
+  - unless post.images.empty?
+    p.image = image_tag post.images.first.url
+
+  p.body = post.body.html_safe
   p.date = post.created_at.strftime('%B %d, %Y')
   - if user_signed_in?
     p.edit = link_to t('a.edit'), edit_admin_post_path(post)

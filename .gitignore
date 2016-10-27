@@ -23,6 +23,7 @@
 /!design/*
 /!ssl_certificate/*
 /!info/*
+/public/uploads/*
 .rvmrc
 
 /config/database.yml

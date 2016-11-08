@@ -11,6 +11,6 @@ class Post < ApplicationRecord
   validates :body,    presence: true
 
   def short_body
-    body[0..100].gsub(/\<.*?\>/, '')
+    body[0..200].gsub(/\<.*?\>/, '')
   end
 end

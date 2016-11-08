@@ -14,10 +14,11 @@
 
       p.body = @post.body.html_safe
       p.social_share_button
-        = social_share_button_tag(@post.title, url: blog_show_url(@post),
-                                               desc: 'description...',
-                                               image: @post.images.empty? ? nil : @post.images.first.url,
-                                               :'data-type' => 'photo')
+        = social_share_button_tag(@post.title) 
+        / , url: 'https://innovationfeel.com',
+        /                                        desc: "#{@post.body[0..100]}...",
+        /                                        image: @post.images.try(:first).try(:url),
+        /                                        'data-type' => 'photo')
       p.date = @post.created_at.strftime('%B %d, %Y')
       - if user_signed_in?
         p.edit = link_to t('a.edit'), edit_admin_post_path(@post)

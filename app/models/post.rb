@@ -9,4 +9,8 @@ class Post < ApplicationRecord
   validates :user_id, presence: true
   validates :title,   presence: true, length: { maximum: 100 }
   validates :body,    presence: true
+
+  def short_body
+    body[0..100]
+  end
 end

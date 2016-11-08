@@ -4,7 +4,7 @@
   - unless post.images.empty?
     p.image = image_tag post.images.first.url
 
-  p.body = post.body.html_safe
+  p.body = post.short_body.html_safe
   p.date = post.created_at.strftime('%B %d, %Y')
   - if user_signed_in?
     p.edit = link_to t('a.edit'), edit_admin_post_path(post)

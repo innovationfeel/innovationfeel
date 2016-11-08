@@ -1,8 +1,11 @@
 en:
   meta:
     keywords: 'custom web development, custom mobile development, web product development, web application development, web services provider, web development companies, mobile application development, mobile product development'
-    description: 'Innovation Feel is a technology company delivering friendly web and mobile products.'
     title: 'Custom Web and Mobile apps engineering'
+    description: 'Innovation Feel is a technology company delivering friendly web and mobile products.'
+    blog:
+      title: Innovation Feel Blog.
+      description: Read our blog to be in the center of all the modern trends and business solutions in web and mobile development industry.
   title:
     bring_your_ideas_into_life: BRING YOUR IDEAS INTO LIFE
     who_we_are: WHO WE ARE

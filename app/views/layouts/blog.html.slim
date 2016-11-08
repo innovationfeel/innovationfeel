@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta content=('text/html; charset=UTF-8') http-equiv='Content-Type'
+    meta name='viewport' content='width=device-width, initial-scale=1'
+
+    - if @post
+      meta name='description' content= @post.short_body
+      meta property='og:title' content= @post.title
+      meta property='og:type' content='article'
+      meta property='og:image' content= @post.images.first.url
+      meta property='og:description' content= @post.short_body
+      meta property='og:url' content= blog_show_url(@post)
+
+      meta property='twitter:card' content='summary'
+      meta property='twitter:site' content='@innovationfeel'
+      meta property='twitter:creator' content='@innovationfeel'
+      meta property='twitter:title' content= @post.title
+      meta property='twitter:description' content= @post.short_body
+      meta property='twitter:image' content= @post.images.first.url
+
+      title= @post.title
+    - else
+      meta name='description' content=t('meta.blog.description')
+      meta property='og:title' content=t('meta.blog.title')
+      meta property='og:description' content=t('meta.blog.description')
+      title= t('meta.blog.title')
+
+    = favicon_link_tag 'favicon.ico'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': true
+    = javascript_include_tag 'application', 'data-turbolinks-track': true
+    = csrf_meta_tags
+  body
+    = yield

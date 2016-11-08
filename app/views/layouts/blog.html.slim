@@ -8,7 +8,7 @@ html
       meta name='description' content= @post.short_body
       meta property='og:title' content= @post.title
       meta property='og:type' content='article'
-      meta property='og:image' content= "#{root_url}#{@post.images.first.url}"
+      meta property='og:image' content= meta_post_image_url(@post)
       meta property='og:description' content= @post.short_body
       meta property='og:url' content= blog_show_url(@post)
 
@@ -17,7 +17,7 @@ html
       meta name='twitter:creator' content='@innovationfeel'
       meta name='twitter:title' content= @post.title
       meta name='twitter:description' content= @post.short_body
-      meta name='twitter:image' content= "#{root_url}#{@post.images.first.url}"
+      meta name='twitter:image' content= meta_post_image_url(@post)
 
       title= @post.title
     - else

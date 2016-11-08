@@ -8,7 +8,7 @@ html
       meta name='description' content= @post.short_body
       meta property='og:title' content= @post.title
       meta property='og:type' content='article'
-      meta property='og:image' content= @post.images.first.url
+      meta property='og:image' content= "https://#{ActionMailer::Base.default_url_options[:host]}#{@post.images.first.url}"
       meta property='og:description' content= @post.short_body
       meta property='og:url' content= blog_show_url(@post)
 
@@ -17,7 +17,7 @@ html
       meta property='twitter:creator' content='@innovationfeel'
       meta property='twitter:title' content= @post.title
       meta property='twitter:description' content= @post.short_body
-      meta property='twitter:image' content= @post.images.first.url
+      meta property='twitter:image' content= "https://#{ActionMailer::Base.default_url_options[:host]}#{@post.images.first.url}"
 
       title= @post.title
     - else

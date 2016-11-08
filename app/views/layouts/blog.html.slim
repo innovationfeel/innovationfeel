@@ -12,12 +12,12 @@ html
       meta property='og:description' content= @post.short_body
       meta property='og:url' content= blog_show_url(@post)
 
-      meta property='twitter:card' content='summary'
-      meta property='twitter:site' content='@innovationfeel'
-      meta property='twitter:creator' content='@innovationfeel'
-      meta property='twitter:title' content= @post.title
-      meta property='twitter:description' content= @post.short_body
-      meta property='twitter:image' content= "#{root_url}#{@post.images.first.url}"
+      meta name='twitter:card' content='summary'
+      meta name='twitter:site' content='@innovationfeel'
+      meta name='twitter:creator' content='@innovationfeel'
+      meta name='twitter:title' content= @post.title
+      meta name='twitter:description' content= @post.short_body
+      meta name='twitter:image' content= "#{root_url}#{@post.images.first.url}"
 
       title= @post.title
     - else

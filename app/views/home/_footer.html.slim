@@ -12,16 +12,16 @@
               li= link_to t('a.about_us'),     '/#who-we-are-screen',   class: 'menu-link'
               li= link_to t('a.what_we_do'),   '/#what-we-do-screen',   class: 'menu-link'
               li= link_to t('a.technologies'), '/#technologies-screen', class: 'menu-link'
-              li= link_to t('a.blog'),         blog_path,               class: 'menu-link'
+              / li= link_to t('a.blog'),         blog_path,               class: 'menu-link'
               li= link_to t('a.contact_us'),   '/#contact-us-screen',   class: 'menu-link'
             - else
               li= link_to t('a.about_us'),     '#', class: 'menu-link scroll', target: 'who-we-are-screen'
               li= link_to t('a.what_we_do'),   '#', class: 'menu-link scroll', target: 'what-we-do-screen'
               li= link_to t('a.technologies'), '#', class: 'menu-link scroll', target: 'technologies-screen'
-              li= link_to t('a.blog'), blog_path, class: 'menu-link'
+              / li= link_to t('a.blog'), blog_path, class: 'menu-link'
               li= link_to t('a.contact_us'),   '#', class: 'menu-link scroll', target: 'contact-us-screen'
             li.social-networks.hidden-xs
-              = link_to 'https://www.linkedin.com/company/innovation-feel-llc', target: '_blank', class: 'icon' do
+              = link_to 'https://www.linkedin.com/company/15183126', target: '_blank', class: 'icon' do
                 span.glyphicon.linkedin
               = link_to 'https://www.facebook.com/innovationfeel', target: '_blank', class: 'icon' do
                 span.glyphicon.fb

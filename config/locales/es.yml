@@ -1,8 +1,11 @@
-es:
+en:
   meta:
     keywords: 'custom web development, custom mobile development, web product development, web application development, web services provider, web development companies, mobile application development, mobile product development'
-    description: 'Innovation Feel is a technology company delivering friendly web and mobile products.'
     title: 'Custom Web and Mobile apps engineering'
+    description: 'Innovation Feel is a technology company delivering friendly web and mobile products.'
+    blog:
+      title: Innovation Feel Blog.
+      description: Read our blog to be in the center of all the modern trends and business solutions in web and mobile development industry.
   title:
     bring_your_ideas_into_life: BRING YOUR IDEAS INTO LIFE
     who_we_are: WHO WE ARE
@@ -20,6 +23,9 @@ es:
     send_a_message: Tell Us About Your Project
     why_ruby_on_rails: Why Ruby on Rails?
     also_we_use: Also we use
+    blog: BLOG
+    admin: ADMIN
+    login: Log in
 
   txt:
     who_we_are: "<p><b>Innovation Feel</b> is a software outsourcing US company that was founded\n
@@ -100,6 +106,8 @@ es:
     about_us: ABOUT US
     what_we_do: WHAT WE DO
     technologies: TECHNOLOGIES
+    blog: BLOG
+    back: Back
     contact_us: CONTACT US
     get_in_touch: GET IN TOUCH
     lets_get_started: LET'S GET STARTED
@@ -110,6 +118,11 @@ es:
     fb: Facebook
     twitter: Twitter
     google_plus: Google+
+    edit: Edit
+    add_post: Add Post
+    edit_post: Edit Post
+    save: Save
+    logout: Logout
 
     title:
       logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'

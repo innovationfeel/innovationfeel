@@ -8,7 +8,7 @@
       .col-md-8.col-sm-9.col-xs-12.footer-menu
         nav
           ul
-            - unless local_assigns[:home]
+            - if local_assigns[:admin] || local_assigns[:blog]
               li= link_to t('a.about_us'),     '/#who-we-are-screen',   class: 'menu-link'
               li= link_to t('a.what_we_do'),   '/#what-we-do-screen',   class: 'menu-link'
               li= link_to t('a.technologies'), '/#technologies-screen', class: 'menu-link'

@@ -22,7 +22,7 @@
             .col-sm-5.col-xs-12
               = f.text_field :phone, placeholder: t('form.phone')
               = f.text_field :company, placeholder: t('form.company')
-              = country_select(:client, :country, include_blank: t('form.select_country'), selected: '')
+              = country_select(:client, :country, include_blank: t('form.select_country'), selected: '', locale: 'en')
               span.glyphicon.glyphicon-chevron-down.select-arrow
           .row
             .col-sm-10.col-sm-offset-1.col-xs-12.text-center

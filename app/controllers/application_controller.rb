@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     I18n.locale =
-      %w(en es de ru).include?(params[:locale]) ? params[:locale] : I18n.default_locale
+      %w(en de).include?(params[:locale]) ? params[:locale] : I18n.default_locale
   end
 
   def json_request?

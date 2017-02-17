@@ -1,4 +1,4 @@
-en:
+de:
   meta:
     keywords: 'custom web development, custom mobile development, web product development, web application development, web services provider, web development companies, mobile application development, mobile product development'
     title: 'Custom Web and Mobile apps engineering'
@@ -7,80 +7,80 @@ en:
       title: Innovation Feel Blog.
       description: Read our blog to be in the center of all the modern trends and business solutions in web and mobile development industry.
   title:
-    bring_your_ideas_into_life: BRING YOUR IDEAS INTO LIFE
-    who_we_are: WHO WE ARE
-    what_we_do: WHAT WE DO
+    bring_your_ideas_into_life: BRINGEN SIE IHRE IDEEN IN DAS LEBEN
+    who_we_are: WER WIR SIND
+    what_we_do: WAS WIR TUN
     technologies: TECHNOLOGIES
-    contact_us: CONTACT US
-    get_in_touch: GET IN TOUCH
-    follow_us: FOLLOW US
-    web_development: Web Application Development
-    mobile_development: Mobile Application Development
-    product_design: Product Design
-    product_design_ux: Product Design and UX
-    web_apps: Web apps
+    contact_us: KONTAKTIERE
+    get_in_touch: IN KONTAKT KOMMEN
+    follow_us: FOLGE UNS
+    web_development: Web-Anwendungsentwicklung
+    mobile_development: Mobile Anwendungsentwicklung
+    product_design: Produktdesign
+    product_design_ux: Produktdesign und UX
+    web_apps: Web-Anwendungen
     mobile_apps: Mobile apps
-    send_a_message: Tell Us About Your Project
-    why_ruby_on_rails: Why Ruby on Rails?
-    also_we_use: Also we use
+    send_a_message: Erzählen Sie uns von Ihrem Projekt
+    why_ruby_on_rails: Warum Ruby on Rails?
+    also_we_use: Auch wir verwenden
     blog: BLOG
     admin: ADMIN
     login: Log in
 
   txt:
-    who_we_are: "<p><b>Innovation Feel</b> is a software outsourcing US company that was founded\n
-    by the team of passionate engineers and designers from <b>Eastern Europe</b>.\n
-    We design and build friendly digital products in Web and Mobile areas.</p>\n
-    <p>Our team consists of <b>Senior and Middle developers</b> to provide best quality of development service.\n
-    We will do our best to innovate your business, take it to higher level and make it profitable.</p>\n
-    <p>We realize that technologies can be complicated for non technical people.\n
-    That's why our manner of development process was chosen to keep it simple and clear for your understanding.</p>\n
-    <p>We build long term relations and want you to feel happy during our partnership.</p>"
+    who_we_are: "<p><b> Innovation Feel </b> ist Outsourcing ein Software-US-Unternehmen, das\n
+    gegründet wurde Durch das Team leidenschaftlicher Ingenieure und Designer aus <b>Osteuropa</b>.\n
+    Wir entwerfen und bauen freundliche digitale Produkte in Web- und Mobilbereich.</p>\n
+    <p>Unser Team besteht aus <b>Senioren und mittleren Entwicklern</b>, um die beste Qualität des Entwicklungsdienstes zu gewährleisten.\n
+    Wir werden unser Bestes tun, um Ihr Unternehmen zu innovieren, es auf ein höheres Niveau zu bringen und es rentabel zu machen.</p>\n
+    <p>Wir wissen, dass Technologien für nicht technische Personen kompliziert sein können.\n
+    Das ist, warum unsere Art des Entwicklungsprozesses gewählt wurde, um es einfach und klar für Ihr Verständnis zu halten.</p>\n
+    <p>Wir bauen langfristige Beziehungen und möchten, dass Sie sich während unserer Partnerschaft glücklich fühlen.</p>"
 
-    web_development: "<p>We combine best practices for user experience,\n
-    performance and cloud infrastructure to help your project succeed.\n
-    Our focus is on across-device solutions that work on every systems.\n
-    We develop Web products to ensure that they are usable and accessible on different platforms,\n
-    including Smartphones and Tablets, using a responsive design approach and\n
+    web_development: "<p>Wir kombinieren bewährte Praktiken für die Nutzererfahrung,\n
+    Leistung und Cloud-Infrastruktur, um Ihr Projekt erfolgreich zu machen.\n
+    Unser Fokus liegt auf Lösungen, die auf jedem System funktionieren.\n
+    Wir entwickeln Web-Produkte, um sicherzustellen, dass sie auf verschiedenen Plattformen nutzbar und verfügbar sind.\n
+    Einschließlich Smartphones und Tablets, mit einem ansprechenden Designansatz und\n
     <a href='#' class='scroll' target='technologies-screen'>modern technologies</a>.</p>\n
-    <p>Whether your project is a small internal system that does your work more efficiently\n
-    or a million user consumer application, our team can help starting with strategy\n
-    all the way through delivery and maintenance.</p>\n
-    <p>Let's <a href='#' class='scroll' target='contact-us-screen'>build a great app</a> together.</p>"
+    <p>Ob Ihr Projekt ein kleines internes System ist, das Ihre Arbeit effizienter macht\n
+    Oder eine Million Benutzer Verbraucheranwendung, unser Team kann helfen, mit Strategie zu beginnen\n
+    Den ganzen Weg durch Lieferung und Wartung.</p>\n
+    <p>Lasst uns <a href='#' class='scroll' target='contact-us-screen'>build a great app</a> zusammen.</p>"
 
-    mobile_development: "<p>Smartphones and Tablets today are the things of daily use.</p>\n
-    <p>&#8226; Having an app may be the most important thing you can do to build your brand.<br />\n
-    &#8226; It must be people-friendly, designed to give users a pleasant, effective experience and keep them returning for more.<br />\n
-    &#8226; The mobile application must deliver more clients for you.</p>\n
-    <p>That’s exactly how we can help you to innovate your business. Our team specializes in building mobile apps\n
-    for iOS and Android platforms. Whether you demand app development solution or it is a custom app development project,\n
-    we are capable of tackling it in the best manner.</p>"
+    mobile_development: "<p>Smartphones und Tablets sind heute die Dinge des täglichen Gebrauchs.</p>\n
+    <p>&#8226; Mit einer App kann das Wichtigste sein, was Sie tun können, um Ihre Marke aufzubauen.<br />\n
+    &#8226; Es muss leutefreundlich sein, um den Nutzern eine angenehme, effektive Erfahrung zu geben und sie für mehr zurückzukehren.<br />\n
+    &#8226; Die mobile Anwendung muss mehr Clients für Sie bereitstellen.</p>\n
+    <p>Das ist genau, wie wir Ihnen helfen können, Ihr Geschäft zu innovieren. Unser Team ist auf den Aufbau mobiler Apps spezialisiert\n
+    Für iOS und Android-Plattformen. Unabhängig davon, ob Sie eine App-Entwicklungslösung oder ein benutzerdefiniertes App-Entwicklungsprojekt verlangen,\n
+    Wir sind in der Lage, es in der besten Weise zu bewältigen.</p>"
 
-    product_design_ux: "<p>Of course, the most important part of any application is the User Experience (UX).\n
-    It does not matter what type of application and what the goal, someone is always on the other side of the screen.</p>\n
-    <p>User Experience is much more than a site’s usability, it is often confused with User Interface (UI).\n
-    A User Interface is a point of interaction and a means of communication between a user and application.\n
-    Interface is a part of the greater User Experience.</p>\n
-    <p>Innovation Feel team always designs all products with the User in Mind\n
-    and applies best practices for both UX and UI in the client's projects.</p>"
+    product_design_ux: "<p>Natürlich ist der wichtigste Teil einer Anwendung die User Experience (UX).\n
+    Es spielt keine Rolle, welche Art von Anwendung und was das Ziel, ist jemand immer auf der anderen Seite des Bildschirms.</p>\n
+    <p>User Experience ist weit mehr als die Benutzerfreundlichkeit einer Website, die oftmals mit User Interface (UI) verwechselt wird.\n
+    Eine Benutzerschnittstelle ist ein Punkt der Interaktion und ein Mittel der Kommunikation zwischen einem Benutzer und einer Anwendung.\n
+    Interface ist ein Teil der größeren User Experience.</p>\n
+    <p>Das Innovation Feel Team entwirft immer alle Produkte mit dem User in Mind\n
+    Und bewährte Praktiken für UX und UI in den Projekten des Kunden anwenden.</p>"
 
-    we_build: "We build Web applications and Mobile APIs based on the <b>Ruby on Rails</b>\n
-    framework using modern technologies and best practices."
+    we_build: "Wir erstellen Web-Applikationen und mobile APIs basierend auf dem <b> Ruby on Rails</b>\n
+    Rahmen von modernen Technologien und bewährten Praktiken."
 
-    why_ruby_on_rails: "<li><b>Efficient in terms of time:</b> The process of development is faster\n
-    than with other frameworks and languages, partly because of the object-oriented nature of Ruby\n
-    and the large collection of open source code available within the Rails community. That's why time\n
-    to final product would be cut down amazingly.</li>\n
-    <li><b>Rapid application development:</b> Rails is good for rapid application development (RAD),\n
-    as the framework makes it easy to accommodate changes.</li>\n
-    <li><b>Efficient in terms of cost:</b> Ruby on Rails is free and does not cost anything to download or use.\n
-    It also runs on a free operating system and works with mostly free databases and web servers.</li>\n
-    <li><b>Testing:</b> Rails has developed a strong focus on testing and has good testing frameworks.</li>\n
-    <li><b>Allows a high level of interaction:</b> Ruby on Rails is suitable for web applications that require\n
-    a lot of content input, storage and management because you would be easily navigating the site, managing\n
-    and uploading content. If you want to build a CRM, CMS or e-commerce system, Ruby on Rails is a perfect fit.</li>"
+    why_ruby_on_rails: "<li><b>Effizient in der Zeit: </b> Der Entwicklungsprozess ist schneller \n
+    Als mit anderen Frameworks und Sprachen, teils wegen der objektorientierten Natur von Ruby \n
+    Und die große Sammlung von Open-Source-Code in der Rails-Community zur Verfügung. Das ist der Grund warum \n
+    Bis zum Endprodukt würde erstaunlich.</li>\n
+    <li><b>Schnelle Anwendungsentwicklung: </b> Rails eignet sich für eine schnelle Anwendungsentwicklung (RAD),\n
+    Da der Rahmen es einfach macht, Änderungen zu berücksichtigen.</li>\n
+    <li><b>Effizient in den Kosten:</b> Ruby on Rails ist kostenlos und kostet nichts zum Herunterladen oder Verwenden. \n
+    Es läuft auch auf einem freien Betriebssystem und arbeitet mit meist kostenlosen Datenbanken und Webservern.</li>\n
+    <li><b>Testen:</b> Rails hat einen starken Fokus auf Tests entwickelt und verfügt über gute Test-Frameworks.</li>\n
+    <li><b>Ermöglicht ein hohes Maß an Interaktion:</b> Ruby on Rails eignet sich für Webanwendungen, die es benötigen\n
+    Eine Menge von Inhalten, Speicherung und Verwaltung, weil Sie wäre leicht zu navigieren, die Website, Verwaltung\n
+    Und das Hochladen von Inhalten. Wenn Sie ein CRM-, CMS- oder E-Commerce-System aufbauen möchten, ist Ruby on Rails eine perfekte Passform.</li>"
 
-    all_rights_reserved: '&copy; 2016 Innovation Feel, LLC'
+    all_rights_reserved: '&copy; 2017 Innovation Feel, LLC'
 
   language:
     english: ENGLISH
@@ -94,23 +94,23 @@ en:
 
   form:
     send: Send
-    first_name: First Name
-    last_name: Last Name (optional)
+    first_name: Vorname
+    last_name: Familienname (optional)
     email: Email
     company: Company (optional)
     phone: Phone (optional)
-    message: Few words about your project
-    select_country: Select a Country
+    message: Nur wenige Worte über Ihr Projekt
+    select_country: Wähle ein Land
 
   a:
-    about_us: ABOUT US
-    what_we_do: WHAT WE DO
+    about_us: ÜBER UNS
+    what_we_do: WAS WIR TUN
     technologies: TECHNOLOGIES
     blog: BLOG
-    back: Back
-    contact_us: CONTACT US
-    get_in_touch: GET IN TOUCH
-    lets_get_started: LET'S GET STARTED
+    back: Zurück
+    contact_us: KONTAKTIERE
+    get_in_touch: IN KONTAKT KOMMEN
+    lets_get_started: IN KONTAKT KOMMEN
     web_apps: Web Apps
     mobile_apps: Mobile Apps
     product_design: Product Design
@@ -124,11 +124,11 @@ en:
     logout: Logout
 
     title:
-      logo: 'Innovation Feel, LLC. Web and Mobile Application development Company.'
+      logo: 'Innovation Feel, LLC. Web and Mobile Anwendungsentwicklung.'
 
   messages:
-    has_been_sent: "Your message has been sent.<br />We'll contact you very soon. Thank you!"
-    something_went_wrong: 'Something went wrong. Please try again.'
+    has_been_sent: "Ihre Nachricht wurde gesendet.<br />Wir melden uns umgehend bei Ihnen. Vielen Dank!"
+    something_went_wrong: "Irgendetwas ist schief gelaufen. Bitte versuche es erneut."
 
   social_share_button:
     share_to: Share to %{name}

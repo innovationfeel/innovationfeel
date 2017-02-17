@@ -13,8 +13,8 @@
       .col-md-8.col-sm-8.col-xs-5.lg-menu
         = link_to '#', class: 'nav-toggle hidden-sm hidden-md hidden-lg' do
           span
-        / = link_to '#', class: 'icon earth-globe-xs hidden-sm hidden-md hidden-lg' do
-        /   span.glyphicon.earth-globe
+        = link_to '#', class: 'icon earth-globe-xs hidden-sm hidden-md hidden-lg' do
+          span.glyphicon.earth-globe
 
         nav.hidden-xs
           ul
@@ -29,16 +29,16 @@
               / li= link_to t('a.blog'), blog_path, class: 'menu-link'
               li= link_to t('a.contact_us'), '#', class: 'menu-link scroll', id: 'header-contact-us', target: 'contact-us-screen'
 
-            / li
-            /   span.earth-globe-container
-            /     = link_to '#', class: 'icon', rel: 'popover', tabindex: '0', data: { toggle: 'popover' } do
-            /       span.glyphicon.earth-globe
-            /     .earth-globe-popover-content.hide
-            /       ul
-            /         li= link_to t('language.english'), '/?locale=en', class: I18n.locale.to_s == 'en' ? 'active' : ''
-            /         li= link_to t('language.german'),  '/?locale=de', class: I18n.locale.to_s == 'de' ? 'active' : ''
-            /         li= link_to t('language.spanish'), '/?locale=es', class: I18n.locale.to_s == 'es' ? 'active' : ''
-            /         li= link_to t('language.russian'), '/?locale=ru', class: I18n.locale.to_s == 'ru' ? 'active' : ''
+            li
+              span.earth-globe-container
+                = link_to '#', class: 'icon', rel: 'popover', tabindex: '0', data: { toggle: 'popover' } do
+                  span.glyphicon.earth-globe
+                .earth-globe-popover-content.hide
+                  ul
+                    li= link_to t('language.english'), '/?locale=en', class: I18n.locale.to_s == 'en' ? 'active' : ''
+                    li= link_to t('language.german'),  '/?locale=de', class: I18n.locale.to_s == 'de' ? 'active' : ''
+                    / li= link_to t('language.spanish'), '/?locale=es', class: I18n.locale.to_s == 'es' ? 'active' : ''
+                    / li= link_to t('language.russian'), '/?locale=ru', class: I18n.locale.to_s == 'ru' ? 'active' : ''
 
             li= link_to 'https://www.linkedin.com/company/15183126', target: '_blank', class: 'icon' do
               span.glyphicon.linkedin
@@ -48,10 +48,10 @@
               span.glyphicon.twitter
 
     .hidden-sm.hidden-md.hidden-lg
-      / .xs-lang-menu.xs-menu
-      /   ul
-      /     li= link_to t('language.english'), '/?locale=en', class: "xs-menu-link #{I18n.locale.to_s == 'en' ? 'active' : ''}"
-      /     li= link_to t('language.german'),  '/?locale=de', class: "xs-menu-link #{I18n.locale.to_s == 'de' ? 'active' : ''}"
+      .xs-lang-menu.xs-menu
+        ul
+          li= link_to t('language.english'), '/?locale=en', class: "xs-menu-link #{I18n.locale.to_s == 'en' ? 'active' : ''}"
+          li= link_to t('language.german'),  '/?locale=de', class: "xs-menu-link #{I18n.locale.to_s == 'de' ? 'active' : ''}"
       /     li= link_to t('language.spanish'), '/?locale=es', class: "xs-menu-link #{I18n.locale.to_s == 'es' ? 'active' : ''}"
       /     li= link_to t('language.russian'), '/?locale=ru', class: "xs-menu-link #{I18n.locale.to_s == 'ru' ? 'active' : ''}"
       .xs-main-menu.xs-menu
